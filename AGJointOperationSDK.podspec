@@ -9,15 +9,16 @@
 Pod::Spec.new do |s|
   s.name             = "AGJointOperationSDK"
   s.version          = "1.0.0"
-  s.summary          = "任玩堂联运iOS SDK"
+  s.summary          = "AppGame Joint Operation SDK for iOS"
   s.homepage         = "http://www.appgame.com"
   s.license          = 'Apache License, Version 2.0'
   s.author           = { "Mao" => "625257555@qq.com" }
-  s.source           = { :git => "https://github.com/appgame-sdk/AGJointOperationSDK-for-iOS.git", :tag => "v#{s.version}" }
+  s.source           = { :git => "https://github.com/appgame-sdk/AGJointOperationSDK-for-iOS.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.frameworks = ['AVFoundation', 'MobileCoreServices', 'SystemConfiguration']
+  s.frameworks = 'MobileCoreServices', 'SystemConfiguration', 'UIKit'
   s.vendored_frameworks = 'AGJointOperationSDK/AGJointOperationSDK.framework'
+  s.resources = 'AGJointOperationSDK/AGJointOperationSDKResource.bundle'
 end
