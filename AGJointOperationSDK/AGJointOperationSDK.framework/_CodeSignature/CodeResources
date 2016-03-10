@@ -4,52 +4,68 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppleIncRootCertificate.cer</key>
+		<data>
+		YR5bZixZOgj/WNFK4iRS0ZjfbGA=
+		</data>
 		<key>Headers/AGConstants.h</key>
 		<data>
-		GaU+caGiYhdBiqrENMrQUcxKajI=
-		</data>
-		<key>Headers/AGJointOperation.h</key>
-		<data>
-		FDtwXbct0FxddEzKv6rKLNGQLyI=
+		LJdYiWM+VUrTrkiRoM+OARftkas=
 		</data>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<data>
-		IHD7qBWmyp3B/zPsHT/xyZUyq/E=
+		RJrxpm3AHgQ+0lA49eDssjjAZrw=
+		</data>
+		<key>Headers/AGPurchase.h</key>
+		<data>
+		dUtbGvXcg12EB9WYN8DsjPNgTy4=
+		</data>
+		<key>Headers/AGUser+AGUI.h</key>
+		<data>
+		QCdRoDJ3ybnAU4lWqNDlZx3YMqU=
 		</data>
 		<key>Headers/AGUser.h</key>
 		<data>
-		nchVmKzxEoAk9denyHW9t6tZJ00=
-		</data>
-		<key>Headers/AppGameClientConfiguration.h</key>
-		<data>
-		1wBxqsB16Dgeh6+/u8mGyYyOdEI=
+		8HXV88rIpjwgfgl/vUrqlYTfABg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		n5VxGqq+VAdn+LMqJDvLZAvvxFc=
+		ItyYM3PM4DT3n04TSeVKt+rzGuo=
+		</data>
+		<key>LICENSE</key>
+		<data>
+		ycUL1Gtpq6YuYcZdirCN0ejIOzg=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppleIncRootCertificate.cer</key>
+		<data>
+		YR5bZixZOgj/WNFK4iRS0ZjfbGA=
+		</data>
 		<key>Headers/AGConstants.h</key>
 		<data>
-		GaU+caGiYhdBiqrENMrQUcxKajI=
-		</data>
-		<key>Headers/AGJointOperation.h</key>
-		<data>
-		FDtwXbct0FxddEzKv6rKLNGQLyI=
+		LJdYiWM+VUrTrkiRoM+OARftkas=
 		</data>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<data>
-		IHD7qBWmyp3B/zPsHT/xyZUyq/E=
+		RJrxpm3AHgQ+0lA49eDssjjAZrw=
+		</data>
+		<key>Headers/AGPurchase.h</key>
+		<data>
+		dUtbGvXcg12EB9WYN8DsjPNgTy4=
+		</data>
+		<key>Headers/AGUser+AGUI.h</key>
+		<data>
+		QCdRoDJ3ybnAU4lWqNDlZx3YMqU=
 		</data>
 		<key>Headers/AGUser.h</key>
 		<data>
-		nchVmKzxEoAk9denyHW9t6tZJ00=
+		8HXV88rIpjwgfgl/vUrqlYTfABg=
 		</data>
-		<key>Headers/AppGameClientConfiguration.h</key>
+		<key>LICENSE</key>
 		<data>
-		1wBxqsB16Dgeh6+/u8mGyYyOdEI=
+		ycUL1Gtpq6YuYcZdirCN0ejIOzg=
 		</data>
 	</dict>
 	<key>rules</key>

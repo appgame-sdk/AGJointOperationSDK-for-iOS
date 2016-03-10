@@ -7,173 +7,108 @@
 //
 
 #import <Foundation/Foundation.h>
-
-///--------------------------------------
-#pragma mark - Logging Levels
-///--------------------------------------
-
-/**
- `AGLogLevel` enum specifies different levels of logging that could be used to limit or display more messages in logs.
- 
- @see `AppGame.+setLogLevel:`
- @see `AppGame.+logLevel`
- */
-typedef NS_ENUM(uint8_t, AGLogLevel) {
-    /**
-     Log level that disables all logging.
-     */
-    AGLogLevelNone = 0,
-    /**
-     Log level that if set is going to output error messages to the log.
-     */
-    AGLogLevelError = 1,
-    /**
-     Log level that if set is going to output the following messages to log:
-     - Errors
-     - Warnings
-     */
-    AGLogLevelWarning = 2,
-    /**
-     Log level that if set is going to output the following messages to log:
-     - Errors
-     - Warnings
-     - Informational messages
-     */
-    AGLogLevelInfo = 3,
-    /**
-     Log level that if set is going to output the following messages to log:
-     - Errors
-     - Warnings
-     - Informational messages
-     - Debug messages
-     */
-    AGLogLevelDebug = 4
-};
-
 ///--------------------------------------
 #pragma mark - Errors
 ///--------------------------------------
 
 /**
- Error domain used for all `NSError`s in the SDK.
+ 用户NSError的错误域的名字。
  */
 extern NSString *const _Nonnull AGErrorDomain;
 
 /**
- `AGErrorCode` enum contains all custom error codes that are used as `code` for `NSError` for callbacks on all classes.
- 
- These codes are used when `domain` of `NSError` that you receive is set to `AGParseErrorDomain`.
+ `AGErrorCode` 自定义的错误码。
  */
 typedef NS_ENUM(NSInteger, AGErrorCode) {
     /**
-     Internal server error. No information available.
+     服务端错误，无错误信息提供。
      */
     kAGErrorInternalServer = 1,
     /**
-     The connection to the Parse servers failed.
+     网络连接错误。
      */
     kAGErrorConnectionFailed = 100,
+    /**
+     无效网络请求。
+     */
     kAGErrorInvalidRequest = 102,
     /**
-     Malformed json object. A json dictionary is expected.
+     无效的JSON格式。
      */
     kAGErrorInvalidJSON = 107,
     /**
-     Field set to incorrect type.
+     字段类型设置错误。
      */
     kAGErrorIncorrectType = 111,
     /**
-     Invalid device token.
+     无效DeviceToken。
      */
     kAGErrorInvalidDeviceToken = 114,
     /**
-     The object is too large.
+     对象过大。
      */
     kAGErrorObjectTooLarge = 116,
     /**
-     That operation isn't allowed for clients.
+     禁止的客户端操作。
      */
     kAGErrorOperationForbidden = 119,
     /**
-     Keys in `NSDictionary` values may not include `$` or `.`.
-     */
-    kAGErrorInvalidNestedKey = 121,
-    /**
-     Invalid file name.
-     A file name can contain only `a-zA-Z0-9_.` characters and should be between 1 and 36 characters.
-     */
-    kAGErrorInvalidFileName = 122,
-    /**
-     The request timed out on the server. Typically this indicates the request is too expensive.
+     超时。
      */
     kAGErrorTimeout = 124,
     /**
-     The email address was invalid.
+     邮件格式错误。
      */
     kAGErrorInvalidEmailAddress = 125,
     /**
-     A unique field was given a value that is already taken.
+     值重复。
      */
     kAGErrorDuplicateValue = 137,
     /**
-     Username is missing or empty.
+     用户名不存在或者是空的。
      */
     kAGErrorUsernameMissing = 200,
     /**
-     Password is missing or empty.
+     密码不存在或者是空的。
      */
     kAGErrorUserPasswordMissing = 201,
     /**
-     Username has already been taken.
+     用户名被占用。
      */
     kAGErrorUsernameTaken = 202,
     /**
-     Email has already been taken.
-     */
-    kAGErrorUserEmailTaken = 203,
-    /**
-     The email is missing, and must be specified.
-     */
-    kAGErrorUserEmailMissing = 204,
-    /**
-     A user with the specified email was not found.
-     */
-    kAGErrorUserWithEmailNotFound = 205,
-    /**
-     The user cannot be altered by a client without the session.
+     无Session不允许修改用户信息。
      */
     kAGErrorUserCannotBeAlteredWithoutSession = 206,
     /**
-     Users can only be created through sign up.
+     只有登录的情况下才能修改用户信息。
      */
     kAGErrorUserCanOnlyBeCreatedThroughSignUp = 207,
     /**
-     Error code indicating that the current session token is invalid.
+     当前SessionToken无效。
      */
     kAGErrorInvalidSessionToken = 209,
+    /**
+     用户Id缺失。
+     */
     kAGErrorUserIdMismatch = 210,
-    kAGErrorInvalidUserInfo = 211
+    /**
+     无效用户信息。
+     */
+    kAGErrorInvalidUserInfo = 211,
+    /**
+     找不到产品标识。
+     */
+    kAGErrorProductIdentifierMismatch = 301,
+    /**
+     无效的产品标识。
+     */
+    kAGErrorInvalidProductIdentifier = 302,
+    /**
+     无效的商品收据。
+     */
+    kAGErrorInvalidReceipt = 303,
 };
-
-///--------------------------------------
-#pragma mark - Blocks
-///--------------------------------------
-
-@class AGUser;
-
-typedef void (^AGBooleanResultBlock)(BOOL succeeded, NSError *_Nullable error);
-typedef void (^AGIntegerResultBlock)(int number, NSError *_Nullable error);
-typedef void (^AGArrayResultBlock)(NSArray *_Nullable objects, NSError *_Nullable error);
-typedef void (^AGSetResultBlock)(NSSet *_Nullable channels, NSError *_Nullable error);
-typedef void (^AGUserResultBlock)(AGUser *_Nullable user, NSError *_Nullable error);
-typedef void (^AGDataResultBlock)(NSData *_Nullable data, NSError *_Nullable error);
-typedef void (^AGDataStreamResultBlock)(NSInputStream *_Nullable stream, NSError *_Nullable error);
-typedef void (^AGFilePathResultBlock)(NSString *_Nullable filePath, NSError *_Nullable error);
-typedef void (^AGStringResultBlock)(NSString *_Nullable string, NSError *_Nullable error);
-typedef void (^AGIdResultBlock)(_Nullable id object, NSError *_Nullable error);
-typedef void (^AGProgressBlock)(int percentDone);
-
-extern uint8_t const AGDefaultMaxNetworkRetryAttempts;
 
 ///--------------------------------------
 #pragma mark - Deprecated Macros
