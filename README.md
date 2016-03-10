@@ -30,7 +30,7 @@ AGJointOperationSDK-iOS 使用 HeaderDoc 注释来做文档支持。
 
 先来看看 AGJointOperationSDK-iOS 接入的步骤
 
-### CocoaPod方式接入
+### CocoaPods方式接入
 
 - 配置你的 Podfile 文件，添加如下配置信息
 
