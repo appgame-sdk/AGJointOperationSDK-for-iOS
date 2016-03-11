@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [AGJointOperationSDK setClientId:@"iosapp01" clientSecret:@"9538e6e7d45d86fb8b88d3df0184fe80"];
+    [AGJointOperationSDK setClientId:@"xxxx" clientSecret:@"xxxxxx"];
     [AGJointOperationSDK setProductionMode:NO];
     return YES;
 }
