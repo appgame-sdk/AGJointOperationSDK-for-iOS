@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任玩堂联运SDKDemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLL-zQ-wFr">
+                                <rect key="frame" x="185" y="28" width="231" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uc3-3A-nJT">
+                                <rect key="frame" x="200" y="67" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mPH-W8-qZl"/>
+                                    <constraint firstAttribute="width" constant="200" id="vx3-du-0Lv"/>
+                                </constraints>
+                                <state key="normal" title="显示登录UI"/>
+                                <connections>
+                                    <action selector="showLoginUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="msG-iS-gdC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fym-WX-o0X">
+                                <rect key="frame" x="200" y="121" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="A7i-v4-HHZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="L8B-gm-IMm"/>
+                                </constraints>
+                                <state key="normal" title="显示绑定或者解绑手机号UI"/>
+                                <connections>
+                                    <action selector="showBindPhoneUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LPn-0N-PUL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e63-Dw-UFA">
+                                <rect key="frame" x="200" y="175" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UU9-CQ-Atl"/>
+                                    <constraint firstAttribute="width" constant="200" id="inU-69-HRg"/>
+                                </constraints>
+                                <state key="normal" title="消耗商品测试"/>
+                                <connections>
+                                    <action selector="showConsumableBuy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WyV-Fx-pD5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akD-7O-tKC">
+                                <rect key="frame" x="200" y="227" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="T5N-tt-ciw"/>
+                                    <constraint firstAttribute="width" constant="200" id="fjA-bp-rZo"/>
+                                </constraints>
+                                <state key="normal" title="非消耗商品测试"/>
+                                <connections>
+                                    <action selector="showNonConsumableBuy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IH5-MC-U1r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7K-AQ-abT">
+                                <rect key="frame" x="200" y="279" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="rRR-dS-gtn"/>
+                                    <constraint firstAttribute="width" constant="200" id="tu7-gn-MR8"/>
+                                </constraints>
+                                <state key="normal" title="购买恢复"/>
+                                <connections>
+                                    <action selector="restoreBuy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xnw-QH-6iv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="akD-7O-tKC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0zc-tx-Ftp"/>
+                            <constraint firstItem="Uc3-3A-nJT" firstAttribute="top" secondItem="BLL-zQ-wFr" secondAttribute="bottom" constant="10" id="FIW-hU-9xV"/>
+                            <constraint firstItem="akD-7O-tKC" firstAttribute="top" secondItem="e63-Dw-UFA" secondAttribute="bottom" constant="8" id="Lx2-2r-PRF"/>
+                            <constraint firstItem="e63-Dw-UFA" firstAttribute="top" secondItem="fym-WX-o0X" secondAttribute="bottom" constant="10" id="Nr9-1t-HHE"/>
+                            <constraint firstItem="BLL-zQ-wFr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QaF-kT-3VT"/>
+                            <constraint firstItem="Q7K-AQ-abT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ULQ-6g-tiE"/>
+                            <constraint firstItem="e63-Dw-UFA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bKZ-RM-ncY"/>
+                            <constraint firstItem="fym-WX-o0X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c2P-om-3RN"/>
+                            <constraint firstItem="Q7K-AQ-abT" firstAttribute="top" secondItem="akD-7O-tKC" secondAttribute="bottom" constant="8" id="n3h-FF-cmz"/>
+                            <constraint firstItem="BLL-zQ-wFr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nEd-Ne-f0f"/>
+                            <constraint firstItem="fym-WX-o0X" firstAttribute="top" secondItem="Uc3-3A-nJT" secondAttribute="bottom" constant="10" id="pUh-hP-aMV"/>
+                            <constraint firstItem="Uc3-3A-nJT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vMT-J1-jq4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="479"/>
+        </scene>
+    </scenes>
+</document>
