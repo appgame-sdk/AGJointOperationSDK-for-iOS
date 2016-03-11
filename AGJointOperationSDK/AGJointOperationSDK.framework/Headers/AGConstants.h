@@ -7,6 +7,40 @@
 //
 
 #import <Foundation/Foundation.h>
+
+///--------------------------------------
+#pragma mark - Logging Levels
+///--------------------------------------
+
+/**
+ `AGLogLevel` enum 定义了不同的日志级别.
+ 
+ @see `AppGame.+setLogLevel:`
+ @see `AppGame.+logLevel`
+ */
+typedef NS_ENUM(uint8_t, AGLogLevel) {
+    /**
+     无日志输出.
+     */
+    AGLogLevelNone = 0,
+    /**
+     只输出Error日志。
+     */
+    AGLogLevelError = 1,
+    /**
+     输出Error和Warning日志。
+     */
+    AGLogLevelWarning = 2,
+    /**
+     输出Error，Warning和Info日志。
+     */
+    AGLogLevelInfo = 3,
+    /**
+     输出Error，Warning，Info和Debug日志
+     */
+    AGLogLevelDebug = 4
+};
+
 ///--------------------------------------
 #pragma mark - Errors
 ///--------------------------------------
