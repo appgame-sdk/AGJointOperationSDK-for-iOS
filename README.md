@@ -158,7 +158,7 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
     "mobile":"137XXXXXXXX",
     "avatar": "http://avatar.static.appgame.com/uploads/avatar/4d/Z9/4cCx.png",
     "nickname":"Fishdrowned",
-    "sex": 0, //0表示未知，1表示男，2表示女
+    "sex": 0, 
     "province": 1, 
     "province_name":"北京市",
     "city": 2,
