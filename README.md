@@ -24,6 +24,7 @@
 	- [x] 封装StoreKit内购过程，方便用户一个函数搞定内购
 	- [x] 内置本地收据验证和服务端收据验证 
 
+
 ## 不支持功能
 
 - [x] 暂时不支持Bitcode功能。苹果的Bitcode还略有问题，如有需要后续可以支持Bitcode。
@@ -62,7 +63,7 @@ pod update
 
 
 ### 手动添加
-下载整个项目，将AGJointOperationSDK内的文件拖到工程内。添加系统库`MobileCoreServices`，`SystemConfiguration`和`UIKit`依赖。添加`-ObjC`标志到Other Linker Flags。
+下载整个项目，将AGJointOperationSDK内的文件拖到工程内。添加系统库`MobileCoreServices.framework`，`SystemConfiguration.framework`，`AdSupport.framework`和`UIKit.framework`依赖。添加`-ObjC`标志到Other Linker Flags。
 
 
 ### 示例代码
@@ -175,6 +176,8 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.0.2
+	- 增加IDFA跟踪。因此提交商店版本的时候请选择对应的广告用途。
 - 1.0.1
 	- 修复一些小缺陷
 - 1.0.0
