@@ -176,6 +176,8 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.0.3
+	- 增加滑动列表收起键盘功能。
 - 1.0.2
 	- 增加IDFA跟踪。因此提交商店版本的时候请选择对应的广告用途。
 - 1.0.1
