@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define AGJOINTOPERATIONSDK_VERSION @"1.0.2"
+#define AGJOINTOPERATIONSDK_VERSION @"1.0.3"
 ///--------------------------------------
 #pragma mark - Logging Levels
 ///--------------------------------------
