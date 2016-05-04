@@ -8,7 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-#define AGJOINTOPERATIONSDK_VERSION @"1.0.3"
+#define AGJOINTOPERATIONSDK_VERSION @"1.0.4"
+
+///--------------------------------------
+#pragma mark - Notification
+/**
+ 登录消息。登录成功或者失败都会发送消息。
+ */
+extern NSString *const _Nonnull AGLoginNotification;
+///--------------------------------------
+
 ///--------------------------------------
 #pragma mark - Logging Levels
 ///--------------------------------------
