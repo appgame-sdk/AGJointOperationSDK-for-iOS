@@ -176,6 +176,8 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.0.4
+	- 增加登录发送通知功能。通过接收通知可获得登录状态及相关信息。
 - 1.0.3
 	- 增加滑动列表收起键盘功能。
 - 1.0.2
