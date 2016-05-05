@@ -97,7 +97,7 @@ pod update
 内购
 
 ```Objective-C
-[[AGPurchase sharedInstance] purchaseWithProductIdentifier:@"你的产品商品id" callBackUrl:@"你的回调地址" tradeId:@"你的订单号" success:^(SKPaymentTransaction *transaction) {
+[[AGPurchase sharedInstance] purchaseWithProductIdentifier:@"你的产品商品id" callBackUrl:@"你的回调地址" tradeId:@"你的订单号" privateInfo:@{@"你的参数":@""} success:^(SKPaymentTransaction *transaction) {
 	  NSLog(@"购买成功");
 } failure:^(NSError *error) {
 	  NSLog(@"购买失败");
@@ -176,6 +176,8 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.0.5
+	- 内购接口增加privateInfo参数。CP可以传入任意参数，这些信息会在服务接收回调的时候被带上。
 - 1.0.4
 	- 增加登录发送通知功能。通过接收通知可获得登录状态及相关信息。通知消息定义在`AGConstants.h`里面。
 - 1.0.3
