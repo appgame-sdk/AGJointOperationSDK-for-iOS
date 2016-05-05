@@ -107,7 +107,7 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>7EA03C2590E5D0056698FD42</string>
+				<string>363DA2262934858708D4FB5F</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -140,6 +140,7 @@
 				<string>34AAE9451C91745800E32FDE</string>
 				<string>34AAE9461C91745800E32FDE</string>
 				<string>C4B2E6CD22EECEA4CA80637F</string>
+				<string>BD0939A7B5C1FA496CA975E7</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -632,6 +633,20 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>363DA2262934858708D4FB5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AED131DE4A1342F54F340076</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
 		<key>4A486D83F38B447B39CCC4DA</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -691,19 +706,6 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>78C28BD3D6B3A7072AFF2562</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>7DC832710607E89C795BC1A3</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -719,18 +721,11 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7EA03C2590E5D0056698FD42</key>
-		<dict>
-			<key>fileRef</key>
-			<string>78C28BD3D6B3A7072AFF2562</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>A1299628649F09B59D5C05D7</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>78C28BD3D6B3A7072AFF2562</string>
+				<string>AED131DE4A1342F54F340076</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -738,6 +733,43 @@ fi
 			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AED131DE4A1342F54F340076</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>BD0939A7B5C1FA496CA975E7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
 		</dict>
 		<key>C4B2E6CD22EECEA4CA80637F</key>
 		<dict>

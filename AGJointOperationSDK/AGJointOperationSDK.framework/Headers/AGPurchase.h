@@ -21,12 +21,14 @@
  @param productIdentifier 对应苹果内购服务的商品id
  @param callBackUrl 交易回调地址
  @param tradeId 用户自己的交易系统对应的订单号
+ @param privateInfo CP自定义的一些信息，可以回调给CP服务端。
  @param successBlock 内购成功后回调
  @param failureBlock 内购失败后回调
  */
 - (void)purchaseWithProductIdentifier:(NSString *)productIdentifier
                           callBackUrl:(NSString *)callBackUrl
                               tradeId:(NSString *)tradeId
+                          privateInfo:(NSDictionary *)privateInfo
                               success:(void (^)(SKPaymentTransaction *transaction))successBlock
                               failure:(void (^)(NSError *error))failureBlock;
 /**
