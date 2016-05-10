@@ -50,4 +50,11 @@ FOUNDATION_EXPORT const unsigned char AGJointOperationSDKVersionString[];
  正式环境还是测试环境
  */
 + (BOOL)isProductionMode;
+
+/**
+ 设置SDK支持的屏幕方向。例如只支横屏可以设置UIInterfaceOrientationMaskLandscape。默认设置为UIInterfaceOrientationMaskAll。
+ @param mask 支持的屏幕方向的掩码.
+ */
++ (void)setSupportedInterfaceOrientations:(UIInterfaceOrientationMask)mask;
++ (UIInterfaceOrientationMask)supportedInterfaceOrientations;
 @end
