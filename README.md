@@ -176,6 +176,9 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.0.6
+    - 增加屏幕支持方向设置。例如`[AGJointOperationSDK setSupportedInterfaceOrientations:UIInterfaceOrientationMaskLandscape]`。
+    - 修复若干bug.
 - 1.0.5
 	- 内购接口增加privateInfo参数。CP可以传入任意参数，这些信息会在服务接收回调的时候被带上。
 - 1.0.4
