@@ -176,6 +176,8 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.0.8
+    - 修改匿名账号处理方式。匿名账号直到被绑定手机号码的情况下，下次匿名登录才会创建新的匿名账号。
 - 1.0.7
     - 增加gameServerId设置.
 - 1.0.6

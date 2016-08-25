@@ -39,7 +39,7 @@
 }
 - (IBAction)showConsumableBuy:(id)sender {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [[AGPurchase sharedInstance] purchaseWithProductIdentifier:@"com.youcan.coincoin"
+    [[AGPurchase sharedInstance] purchaseWithProductIdentifier:@"com.sydl.zs128"
                                                    callBackUrl:@"http://www.baidu.com"
                                                        tradeId:[[NSDate date] description]
                                                    privateInfo:@{@"haha shenme gui":@"xxxxxxx"}
