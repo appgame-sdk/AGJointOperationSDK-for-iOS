@@ -1,3 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
-pod 'AGJointOperationSDK' 
+
+target 'AGJointOperationSDKDemo' do
+    use_frameworks!
+    pod 'AGJointOperationSDK'
+end
