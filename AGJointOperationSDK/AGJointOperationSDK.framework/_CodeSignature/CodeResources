@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>AppleIncRootCertificate.cer</key>
-		<data>
-		YR5bZixZOgj/WNFK4iRS0ZjfbGA=
-		</data>
 		<key>Headers/AGConstants.h</key>
 		<data>
-		SCawFff2NUGtAmcXJ3QZggb5VOA=
+		cag0yJMJA+lBXbDH5IJrVxq8cz8=
 		</data>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<data>
@@ -32,33 +28,18 @@
 		<data>
 		cQ2WoKHuPH0VVKitj/59wnNju2A=
 		</data>
-		<key>LICENSE</key>
-		<data>
-		ycUL1Gtpq6YuYcZdirCN0ejIOzg=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>AppleIncRootCertificate.cer</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YR5bZixZOgj/WNFK4iRS0ZjfbGA=
-			</data>
-			<key>hash2</key>
-			<data>
-			sLFzDsvH/0UFFCxJ8Slebtpryu1+LGjFvpG1oRAB8CQ=
-			</data>
-		</dict>
 		<key>Headers/AGConstants.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SCawFff2NUGtAmcXJ3QZggb5VOA=
+			cag0yJMJA+lBXbDH5IJrVxq8cz8=
 			</data>
 			<key>hash2</key>
 			<data>
-			HQGXCPY7L9Y+qxn23nUzt/5Yca79ajueaMATwnZCKIs=
+			DDIzUxXAOsQmoihf867AveD1BpLMZjTt82PdMmDag/c=
 			</data>
 		</dict>
 		<key>Headers/AGJointOperationSDK.h</key>
@@ -103,17 +84,6 @@
 			<key>hash2</key>
 			<data>
 			nuqT98sdpeXvf79fqaY1z4vcU/vyII5W7AhjjgsFo4E=
-			</data>
-		</dict>
-		<key>LICENSE</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ycUL1Gtpq6YuYcZdirCN0ejIOzg=
-			</data>
-			<key>hash2</key>
-			<data>
-			NW5CJe0HffJYaGeVeXhBBLG3pXUuusxzBKLU7A8Z6Wg=
 			</data>
 		</dict>
 	</dict>

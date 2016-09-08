@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define AGJOINTOPERATIONSDK_VERSION @"1.0.8"
+#define AGJOINTOPERATIONSDK_VERSION @"1.0.9"
 
 ///--------------------------------------
 #pragma mark - Notification
@@ -152,6 +152,10 @@ typedef NS_ENUM(NSInteger, AGErrorCode) {
      无效的商品收据。
      */
     kAGErrorInvalidReceipt = 303,
+    /**
+     订单号丢失。
+     */
+    kAGErrorPaymentOrderIdLost = 304,
 };
 
 ///--------------------------------------
