@@ -176,6 +176,8 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.0.10
+    - 修复账号若干bugs。
 - 1.0.9
     - 修复丢单问题。
 - 1.0.8
