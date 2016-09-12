@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "AGJointOperationSDK"
-  s.version          = "1.0.10"
+  s.version          = "1.0.11"
   s.summary          = "AppGame Joint Operation SDK for iOS"
   s.homepage         = "http://www.appgame.com"
   s.license          = 'Apache License, Version 2.0'
