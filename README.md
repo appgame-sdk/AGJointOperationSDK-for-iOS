@@ -176,6 +176,8 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.0.12
+	- 增加transaction id的校验。 
 - 1.0.11
     - 修复账号若干bugs。
 - 1.0.10
