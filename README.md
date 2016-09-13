@@ -76,10 +76,11 @@ pod update
 初始化
 
 ```Objective-C
+
+//默认为正式环境，NO为测试环境
+[AGJointOperationSDK setProductionMode:NO];
 [AGJointOperationSDK setClientId:@"你的id" clientSecret:@"你的secret"];
 
-//默认为正式环境，NO为测试环境，内购沙盒测试请设置为NO
-[AGJointOperationSDK setProductionMode:NO];
 ```
 显示登录界面
 
