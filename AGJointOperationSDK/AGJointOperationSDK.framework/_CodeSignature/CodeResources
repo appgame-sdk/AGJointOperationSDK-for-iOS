@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/AGConstants.h</key>
 		<data>
-		u85gwskz2WrkniJv4B/UhnrxKmM=
+		LMmQdyP+5w46OcnLLdm8TmRTciE=
 		</data>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<data>
-		3wvDPXyCGbj+1XAn/4sgszG94ZU=
+		y65UJO8olL2pUpfCnAfUxxnti6o=
 		</data>
 		<key>Headers/AGPurchase.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zBb13oDAV8MqYc9PwrjCNoJtqSY=
+		Aw4Cj9oMhNWJ916kIsx3IU/Bej8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,22 +35,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u85gwskz2WrkniJv4B/UhnrxKmM=
+			LMmQdyP+5w46OcnLLdm8TmRTciE=
 			</data>
 			<key>hash2</key>
 			<data>
-			JH9w9gKUDQ4XrGMmZlfVcXPAxSS546exl9/UsZ9pxqs=
+			z464cDyA+2Y9tWukyS2y5Hsw0hF/3C+O1gO/fVHBVTM=
 			</data>
 		</dict>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3wvDPXyCGbj+1XAn/4sgszG94ZU=
+			y65UJO8olL2pUpfCnAfUxxnti6o=
 			</data>
 			<key>hash2</key>
 			<data>
-			gb2fKM+C1dinJKzX2R6Gn+pWOHDZ5Pi2OdDS9s0Krhk=
+			es5HVfgUMrt6bR6gI5gICrHODkLWMlQ1BmGTaOPXVUk=
 			</data>
 		</dict>
 		<key>Headers/AGPurchase.h</key>

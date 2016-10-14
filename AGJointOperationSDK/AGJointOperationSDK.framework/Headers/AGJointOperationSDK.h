@@ -28,17 +28,18 @@ FOUNDATION_EXPORT const unsigned char AGJointOperationSDKVersionString[];
  设置SDK的ClientId和ClientSecret。这两个值向任玩堂申请获得。
  @param clientId 客户端id
  @param clientSecret 客户端secret
+ @param gameServerId CP服务器id
  */
-+ (void)setClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret;
++ (void)setClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret gameServerId:(NSString*)gameServerId;
 
 /**
  设置SDK的ClientId和ClientSecret。这两个值向任玩堂申请获得。
  @param clientId 客户端id
  @param clientSecret 客户端secret
  @param gameServerId CP服务器id
+ @param roleId 游戏角色id
  */
-+ (void)setClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret gameServerId:(NSString*)gameServerId;
-
++ (void)setClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret gameServerId:(NSString*)gameServerId roleId:(NSString*)roleId;
 /**
  获得客户端id.
  */
@@ -53,6 +54,11 @@ FOUNDATION_EXPORT const unsigned char AGJointOperationSDKVersionString[];
  获得CP服务器id.
  */
 + (NSString *)getGameServerId;
+
+/**
+ 获得游戏角色id.
+ */
++ (NSString *)getRoleId;
 
 /**
  设置正式环境，还是测试环境。

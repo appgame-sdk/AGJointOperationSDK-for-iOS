@@ -79,7 +79,7 @@ pod update
 
 //默认为正式环境，NO为测试环境
 [AGJointOperationSDK setProductionMode:NO];
-[AGJointOperationSDK setClientId:@"你的id" clientSecret:@"你的secret"];
+[AGJointOperationSDK setClientId:@"你的client id" clientSecret:@"你的client secret" gameServerId:@"你的服务器id" roleId:@"你的游戏角色id（可选）"];
 
 ```
 显示登录界面
@@ -177,6 +177,10 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.0.13
+	- 修改服务器地址。
+	- game server id为必选参数。
+	- 增加可选的游戏角色id
 - 1.0.12
 	- 增加transaction id的校验。 
 - 1.0.11
