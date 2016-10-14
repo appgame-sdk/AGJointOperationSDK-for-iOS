@@ -77,7 +77,7 @@ pod update
 
 ```Objective-C
 
-//默认为正式环境，NO为测试环境，内购沙盒测试请设置为NO
+//默认为正式环境，NO为测试环境
 [AGJointOperationSDK setProductionMode:NO];
 [AGJointOperationSDK setClientId:@"你的client id" clientSecret:@"你的client secret" gameServerId:@"你的服务器id" roleId:@"你的游戏角色id（可选）"];
 
