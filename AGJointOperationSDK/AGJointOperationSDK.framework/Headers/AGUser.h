@@ -66,7 +66,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly, getter=isAnonymous) BOOL anonymous;
 
 /**
- 获得当前登录的用户，若返回值为nil，即表示未登录
+ 获得当前登录的用户，可能为nil。
  */
 + (instancetype)currentUser;
 /**

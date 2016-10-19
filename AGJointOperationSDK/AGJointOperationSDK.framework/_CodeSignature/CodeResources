@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AGConstants.h</key>
 		<data>
-		LMmQdyP+5w46OcnLLdm8TmRTciE=
+		BVGFAaqLQv98pUQ3cnG/ePTJW1k=
 		</data>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/AGUser.h</key>
 		<data>
-		8HXV88rIpjwgfgl/vUrqlYTfABg=
+		yhZd1aRNwoM9+wVEmZ7QO+SUveA=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LMmQdyP+5w46OcnLLdm8TmRTciE=
+			BVGFAaqLQv98pUQ3cnG/ePTJW1k=
 			</data>
 			<key>hash2</key>
 			<data>
-			z464cDyA+2Y9tWukyS2y5Hsw0hF/3C+O1gO/fVHBVTM=
+			4g/mert1sgpK7pf+2h6iavhekXQo4fnOUbeUlJ3MjLQ=
 			</data>
 		</dict>
 		<key>Headers/AGJointOperationSDK.h</key>
@@ -79,11 +79,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8HXV88rIpjwgfgl/vUrqlYTfABg=
+			yhZd1aRNwoM9+wVEmZ7QO+SUveA=
 			</data>
 			<key>hash2</key>
 			<data>
-			nuqT98sdpeXvf79fqaY1z4vcU/vyII5W7AhjjgsFo4E=
+			I/V4qhtroTNGEmJPWiYnazPsvYqdVMziGbTNXUMHakk=
 			</data>
 		</dict>
 	</dict>

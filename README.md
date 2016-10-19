@@ -177,6 +177,8 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.0.14
+	- 修复一个可能丢单的问题。 
 - 1.0.13
 	- 修改服务器地址。
 	- game server id为必选参数。
