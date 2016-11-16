@@ -19,6 +19,7 @@ FOUNDATION_EXPORT const unsigned char AGJointOperationSDKVersionString[];
 #import <AGJointOperationSDK/AGUser+AGUI.h>
 #import <AGJointOperationSDK/AGConstants.h>
 #import <AGJointOperationSDK/AGPurchase.h>
+#import <AGJointOperationSDK/AGAnalysis.h>
 
 /**
  任玩堂联运SDK类。
