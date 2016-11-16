@@ -4,13 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/AGAnalysis.h</key>
+		<data>
+		n9jMOECBeVoOmN7huPtRpGJNobQ=
+		</data>
 		<key>Headers/AGConstants.h</key>
 		<data>
-		BVGFAaqLQv98pUQ3cnG/ePTJW1k=
+		MomBNgeeUAtZgZdzV+ypwbvnEUs=
 		</data>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<data>
-		y65UJO8olL2pUpfCnAfUxxnti6o=
+		QXDXeAPFvcWDUQG5zanPkvmCQ1s=
 		</data>
 		<key>Headers/AGPurchase.h</key>
 		<data>
@@ -26,31 +30,42 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Aw4Cj9oMhNWJ916kIsx3IU/Bej8=
+		137ChHx7vFBs/nWJVTF6dGYDQlU=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/AGAnalysis.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n9jMOECBeVoOmN7huPtRpGJNobQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			TYyxHajSrr618taglGv6wpHrYQnD3pLaoSAAqyV01eo=
+			</data>
+		</dict>
 		<key>Headers/AGConstants.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BVGFAaqLQv98pUQ3cnG/ePTJW1k=
+			MomBNgeeUAtZgZdzV+ypwbvnEUs=
 			</data>
 			<key>hash2</key>
 			<data>
-			4g/mert1sgpK7pf+2h6iavhekXQo4fnOUbeUlJ3MjLQ=
+			jwFF/KK17u3016LpV1cMmX4eCXWLmuSPG0F8zmF6jIE=
 			</data>
 		</dict>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y65UJO8olL2pUpfCnAfUxxnti6o=
+			QXDXeAPFvcWDUQG5zanPkvmCQ1s=
 			</data>
 			<key>hash2</key>
 			<data>
-			es5HVfgUMrt6bR6gI5gICrHODkLWMlQ1BmGTaOPXVUk=
+			RVyHF/3GRMa8edsboR+ZS/zB/8C2lStc6mZxanYaSdo=
 			</data>
 		</dict>
 		<key>Headers/AGPurchase.h</key>
@@ -105,6 +120,11 @@
 			<key>weight</key>
 			<real>1100</real>
 		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
 		<key>^version.plist$</key>
 		<true/>
 	</dict>
@@ -149,6 +169,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>

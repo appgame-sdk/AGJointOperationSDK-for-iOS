@@ -177,6 +177,9 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.0.15
+	- 界面改版，替换为弹框形式。
+	- 修复若干bug。
 - 1.0.14
 	- 修复一个可能丢单的问题。 
 - 1.0.13
