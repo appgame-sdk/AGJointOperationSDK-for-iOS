@@ -23,7 +23,7 @@
 - [x] 支持苹果内购
 	- [x] 封装StoreKit内购过程，方便用户一个函数搞定内购
 	- [x] 内置本地收据验证和服务端收据验证 
-
+- [x] 支持数据统计分析
 
 ## 不支持功能
 
@@ -104,7 +104,18 @@ pod update
 	  NSLog(@"购买失败");
 }];
 ```
+数据统计分析
 
+```objective-C
+// 1. 在设置完clientID、clientSecret、serverID 和 roleId后，需要进行初始化才可以使用数据采集接口。
+[AGAnalysis initialWithAccount:@"testAccount"
+                       adverts:@"test_adverts"
+                     extraData:nil
+               completionBlock:nil];
+
+// 2. 在需要采集数据的地方调用对应的接口来采集和上传数据，例如：上传角色注册事件
+[AGAnalysis sendRoleRegisterEnventWithExtraData:nil completionBlock:nil];
+```
 ###回调地址说明
 
 用户完成支付之后，SDK服务器会给开发商服务器发起POST回调，通知订单处理结果。开发商需要在内购的时候传入回调地址。
@@ -179,6 +190,7 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 ## 版本历史
 - 1.0.15
 	- 界面改版，替换为弹框形式。
+	- 增加统计分析功能。
 	- 修复若干bug。
 - 1.0.14
 	- 修复一个可能丢单的问题。 
