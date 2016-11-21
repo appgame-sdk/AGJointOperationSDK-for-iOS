@@ -98,15 +98,29 @@ pod update
 内购
 
 ```Objective-C
+// 购买
 [[AGPurchase sharedInstance] purchaseWithProductIdentifier:@"你的产品商品id" callBackUrl:@"你的回调地址" tradeId:@"你的订单号" privateInfo:@{@"你的参数":@""} success:^(SKPaymentTransaction *transaction) {
 	  NSLog(@"购买成功");
 } failure:^(NSError *error) {
 	  NSLog(@"购买失败");
 }];
 ```
+>注：为避免购买成功后因意外导致发送订单失败的情况，请在程序从后台唤醒或网络状态发生改变时调用 `restoreTransactionsOnSuccess:` 接口来检测订单状态，以保证订单能及时处理。
+
+```Objective-C
+// 从后台唤醒
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    [[AGPurchase sharedInstance] restoreTransactionsOnSuccess:^(NSArray *transactions) {
+        NSLog(@"恢复购买成功%@", transactions);
+    } failure:^(NSError *error) {
+        NSLog(@"恢复购买失败%@", error);
+    }];
+}
+```
+
 数据统计分析
 
-```objective-C
+```Objective-C
 // 1. 在设置完clientID、clientSecret、serverID 和 roleId后，需要进行初始化才可以使用数据采集接口。
 [AGAnalysis initialWithAccount:@"testAccount"
                        adverts:@"test_adverts"
