@@ -105,7 +105,7 @@ pod update
 	  NSLog(@"购买失败");
 }];
 ```
->注：为避免极端条件下发送订单失败的情况，请在程序从后台唤醒或网络状态发生改变时调用 `restoreTransactionsOnSuccess:` 接口来检测订单状态，以保证订单能即时处理。
+>注：为避免购买成功后因意外导致发送订单失败的情况，请在程序从后台唤醒或网络状态发生改变时调用 `restoreTransactionsOnSuccess:` 接口来检测订单状态，以保证订单能及时处理。
 
 ```Objective-C
 // 从后台唤醒
