@@ -18,8 +18,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [AGJointOperationSDK setProductionMode:NO];
-    [AGJointOperationSDK setClientId:@"mbzj" clientSecret:@"test.mbzj" gameServerId:@"game server id" roleId:@"游戏角色id"];
-
     return YES;
 }
 
