@@ -81,8 +81,7 @@ pod update
 
 //默认为正式环境，NO为测试环境
 [AGJointOperationSDK setProductionMode:NO];
-[AGJointOperationSDK setClientId:@"你的client id" clientSecret:@"你的client secret" gameServerId:@"你的服务器id" roleId:@"你的游戏角色id（可选）"];
-
+[AGJointOperationSDK setClientId:@"你的client id" clientSecret:@"你的client secret" gameServerId:@"你的服务器id"];
 ```
 显示登录界面
 
