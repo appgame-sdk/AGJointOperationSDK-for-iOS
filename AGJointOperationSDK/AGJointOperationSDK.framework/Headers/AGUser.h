@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import <AGJointOperationSDK/AGConstants.h>
-
+@class AGUser;
 NS_ASSUME_NONNULL_BEGIN
+
+typedef void (^BindFaceBookCompletion)(AGUser *user, NSError *error);
+
 /**
  任玩堂的OAuth认证信息
  */

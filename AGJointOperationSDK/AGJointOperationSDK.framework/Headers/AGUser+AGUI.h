@@ -7,6 +7,7 @@
 //
 
 #import <AGJointOperationSDK/AGJointOperationSDK.h>
+#import <UIKit/UIKit.h>
 
 @interface AGUser (AGUI)
 /**
@@ -22,5 +23,7 @@
  @param animated 显示的时候是否需要动画。转场样式为UIModalTransitionStyleCrossDissolve。
  */
 + (void)showBindOrUnbindPhoneUIWithAnimated:(BOOL)animated;
+
+
 
 @end

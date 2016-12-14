@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+typedef void (^ErrorBlock)(NSError *error);
 @interface AGAnalysis : NSObject
 ///上传应用的一些基本信息
 + (void)sendAppActivationDataWithCompletionBlock:(void(^)(NSError *error))block;
@@ -23,10 +23,8 @@
  @param extraData 扩展数据
  @param block     完成回调
  */
-+ (void)initialWithAccount:(NSString *)account
-                   adverts:(NSString *)adverts
-                 extraData:(NSDictionary *)extraData
-           completionBlock:(void (^)(NSError *))block;
++ (void)sendLaunchEventWithExtraData:(NSDictionary *)extraData
+                     completionBlock:(ErrorBlock)block;
 
 
 /**
@@ -35,8 +33,8 @@
  @param extraData 扩展数据
  @param block     完成回调
  */
-+ (void)sendRoleRegisterEnventWithExtraData:(NSDictionary *)extraData
-                            completionBlock:(void (^)(NSError *))block;
++ (void)sendRoleRegisterEventWithExtraData:(NSDictionary *)extraData
+                            completionBlock:(ErrorBlock)block;
 
 
 /**
@@ -45,8 +43,8 @@
  @param extraData 扩展数据
  @param block     完成回调
  */
-+ (void)sendRoleLoginEnventWithExtraData:(NSDictionary *)extraData
-                         completionBlock:(void (^)(NSError *))block;
++ (void)sendRoleLoginEventWithExtraData:(NSDictionary *)extraData
+                         completionBlock:(ErrorBlock)block;
 
 
 /**
@@ -55,8 +53,8 @@
  @param extraData 扩展数据
  @param block     完成回调
  */
-+ (void)sendRoleLogoutEnventWithExtraData:(NSDictionary *)extraData
-                          completionBlock:(void (^)(NSError *))block;
++ (void)sendRoleLogoutEventWithExtraData:(NSDictionary *)extraData
+                          completionBlock:(ErrorBlock)block;
 
 
 /**
@@ -65,7 +63,7 @@
  @param payParams 支付相关参数
  @param block     完成回调
  */
-+ (void)sendPayEnventWithParams:(NSDictionary *)payParams completionBlock:(void (^)(NSError *))block;
++ (void)sendPayEventWithParams:(NSDictionary *)payParams completionBlock:(ErrorBlock)block;
 
 
 /**
@@ -77,7 +75,7 @@
  */
 + (void)sendRoleLevelupEventWithUlevel:(NSString *)ulevel
                              extraData:(NSDictionary *)extraData
-                       completionBlock:(void (^)(NSError *))block;
+                       completionBlock:(ErrorBlock)block;
 
 
 /**
@@ -93,14 +91,14 @@
                                tag1:(NSString *)tag1
                                tag2:(NSString *)tag2
                           extraData:(NSDictionary *)extraData
-                    completionBlock:(void (^)(NSError *))block;
+                    completionBlock:(ErrorBlock)block;
 
 
 /**
  发送虚拟货币事件
 
  @param action      操作类型 ('1' - 获得虚拟货币，'0' - 消费虚拟货币，默认为消费虚拟货币)
- @param reason      虚拟货币变动原因(比如购买道具，进入副本，战斗获得)
+ @param reason      虚拟货币变动原因(比如购买道具，进入副本，战斗获得)(必填参数)
  @param point       虚拟货币变动节点（比如道具编号， 副本编号， ..... ）
  @param coinType    虚拟货币类型
  @param coinCount   虚拟货币变动数量
@@ -115,14 +113,14 @@
                              coinCount:(NSString *)coinCount
                            coinBalance:(NSString *)coinBalance
                              extraData:(NSDictionary *)extraData
-                       completionBlock:(void (^)(NSError *))block;
+                       completionBlock:(ErrorBlock)block;
 
 
 /**
  发送道具事件
 
  @param action      操作类型（'1' - 获得道具， '0' - 失去道具， 默认为失去道具）
- @param reason      道具变动原因（比如购买道具， 战斗获得， 道具丢弃）
+ @param reason      道具变动原因（比如购买道具， 战斗获得， 道具丢弃(必填参数)）
  @param point       道具变动节点（对道具变动原因的补充， 比如用于标识获得道具的场景或者使用道具的场景）
  @param itemType    道具类型
  @param itemID      道具标识
@@ -139,7 +137,7 @@
                           itemCount:(NSString *)itemCount
                         itemBalance:(NSString *)itemBalance
                           extraData:(NSDictionary *)extraData
-                    completionBlock:(void (^)(NSError *))block;
+                    completionBlock:(ErrorBlock)block;
 
 
 /**
@@ -165,7 +163,7 @@
                                  reason:(NSString *)reason
                                duration:(NSString *)duration
                               extraData:(NSDictionary *)extraData
-                        completionBlock:(void (^)(NSError *))block;
+                        completionBlock:(ErrorBlock)block;
 
 
 /**
@@ -185,7 +183,7 @@
                            reason:(NSString *)reason
                          duration:(NSString *)duration
                         extraData:(NSDictionary *)extraData
-                  completionBlock:(void (^)(NSError *))block;
+                  completionBlock:(ErrorBlock)block;
 
 
 /**
@@ -203,7 +201,7 @@
                               action:(NSString *)action
                             duration:(NSString *)duration
                            extraData:(NSDictionary *)extraData
-                     completionBlock:(void (^)(NSError *))block;
+                     completionBlock:(ErrorBlock)block;
 
 
 /**
@@ -215,6 +213,6 @@
  */
 + (void)sendReportEventWithSummary:(NSString *)summary
                            message:(NSString *)message
-                   completionBlock:(void (^)(NSError *))block;
+                   completionBlock:(ErrorBlock)block;
 
 @end

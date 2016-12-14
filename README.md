@@ -123,14 +123,13 @@ pod update
 数据统计分析
 
 ```Objective-C
-// 1. 在设置完clientID、clientSecret、serverID 和 roleId后，需要进行初始化才可以使用数据采集接口。
-[AGAnalysis initialWithAccount:@"testAccount"
-                       adverts:@"test_adverts"
-                     extraData:nil
-               completionBlock:nil];
 
-// 2. 在需要采集数据的地方调用对应的接口来采集和上传数据，例如：上传角色注册事件
-[AGAnalysis sendRoleRegisterEnventWithExtraData:nil completionBlock:nil];
+// 在需要采集数据的地方调用对应的接口来采集和上传数据，例如：角色注册事件(在角色注册成功后调用)
+[AGAnalysis sendRoleRegisterEventWithExtraData:nil completionBlock:^(NSError *error) {
+    if (error) {
+        NSLog(@"%@", error);
+    }
+}];
 ```
 ###回调地址说明
 
@@ -204,6 +203,9 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.0.16
+	- 优化统计接口。
+	- 修复若干bug。
 - 1.0.15
 	- 界面改版，替换为弹框形式。
 	- 增加统计分析功能。
