@@ -65,9 +65,22 @@ pod update
 
 
 ### 手动添加
-下载整个项目，将AGJointOperationSDK内的文件拖到工程内。添加系统库`MobileCoreServices.framework`，`SystemConfiguration.framework`，`AdSupport.framework`和`UIKit.framework`依赖。添加`-ObjC`标志到Other Linker Flags。
+1. 下载整个项目，将`AGJointOperationSDK.framework` 和 `AGJointOperationSDKResource.bundle`拖到您的工程内
+	> 两个文件需在同一目录下
+	
+	![](http://o9xc0bh9t.bkt.clouddn.com/QQ20161215-114953.png)
+2. 添加系统库`MobileCoreServices.framework`，`SystemConfiguration.framework`，`AdSupport.framework`和`UIKit.framework`依赖。
 
-
+	![](http://o9xc0bh9t.bkt.clouddn.com/14817739910204.jpg)
+3. 配置工程。
+	- 添加`-ObjC`标志到Other Linker Flags。
+	
+	  ![](http://o9xc0bh9t.bkt.clouddn.com/14817743000443.jpg)
+	  
+	- 设置 `Enable Bitcode` 为 `No`
+		
+	  ![](http://o9xc0bh9t.bkt.clouddn.com/14817744325203.jpg)
+	  
 ### 示例代码
 
 在需要的地方添加
