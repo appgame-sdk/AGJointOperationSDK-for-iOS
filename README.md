@@ -134,8 +134,16 @@ pod update
 
 数据统计分析
 
-```Objective-C
+* 开启debug
 
+```Objective-C
+// 开启debug模式下，您可以在http://106.75.18.10/chat.html?channel="您的clientID"实时观察数据变化
+// 默认为关闭状态
+[AGAnalysis setDebugModel:YES];
+```
+* 调用
+
+```Objective-C
 // 在需要采集数据的地方调用对应的接口来采集和上传数据，例如：角色注册事件(在角色注册成功后调用)
 [AGAnalysis sendRoleRegisterEventWithExtraData:nil completionBlock:^(NSError *error) {
     if (error) {
