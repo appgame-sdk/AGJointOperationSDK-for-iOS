@@ -9,17 +9,18 @@
 #import <Foundation/Foundation.h>
 typedef void (^ErrorBlock)(NSError *error);
 @interface AGAnalysis : NSObject
+
 ///上传应用的一些基本信息
 + (void)sendAppActivationDataWithCompletionBlock:(void(^)(NSError *error))block;
 
 
-
+/**
+ * 设置调试模式
+ */
++ (void)setDebugModel:(BOOL)debug;
 /**
  初始化设备启动事件的相关数据 (在应用启动初始化时调用，调用前必须配置好 clientId 和 clientSecret)
 
-
- @param account   登录账号
- @param adverts   广告商标识
  @param extraData 扩展数据
  @param block     完成回调
  */
