@@ -137,7 +137,7 @@ pod update
 * 开启debug
 
 ```Objective-C
-// 开启debug模式下，您可以在实时观察数据变化
+// 开启debug模式下，您可以实时观察数据变化
 // 默认为关闭状态
 [AGAnalysis setDebugModel:YES];
 ```
@@ -159,7 +159,7 @@ pod update
 	- 错误提示
 		- 字段【xxx】内容无效: 表示参数 `xxx` 的格式不正确
 		- 校验失败: 签名错误
-		- unknow appkey - xxx：表示clientID无效
+		- unknow appkey - xxx：表示  `clientID` 无效
 	
 ###回调地址说明
 
