@@ -137,7 +137,7 @@ pod update
 * 开启debug
 
 ```Objective-C
-// 开启debug模式下，您可以在http://106.75.18.10/chat.html?channel="您的clientID"实时观察数据变化
+// 开启debug模式下，您可以在实时观察数据变化
 // 默认为关闭状态
 [AGAnalysis setDebugModel:YES];
 ```
@@ -151,6 +151,16 @@ pod update
     }
 }];
 ```
+
+* debug模式下查看统计结果
+
+	- 浏览器中打开: http://106.75.18.10/chat.html?channel=appkey
+	- appkey的位置填写游戏对应的clientID
+	- 错误提示
+		- 字段【xxx】内容无效: 表示参数 `xxx` 的格式不正确
+		- 校验失败: 签名错误
+		- unknow appkey - xxx：表示clientID无效
+	
 ###回调地址说明
 
 用户完成支付之后，SDK服务器会给开发商服务器发起POST回调，通知订单处理结果。开发商需要在内购的时候传入回调地址。
