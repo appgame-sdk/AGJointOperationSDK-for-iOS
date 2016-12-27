@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.frameworks = 'MobileCoreServices', 'SystemConfiguration', 'UIKit'
+  s.library = 'sqlite3'
   s.vendored_frameworks = 'AGJointOperationSDK/AGJointOperationSDK.framework'
   s.resources = 'AGJointOperationSDK/AGJointOperationSDKResource.bundle'
   s.xcconfig = {'OTHER_LDFLAGS' => '$(inherited) -ObjC'}
