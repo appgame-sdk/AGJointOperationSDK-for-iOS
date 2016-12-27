@@ -18,13 +18,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [AGJointOperationSDK setProductionMode:NO];
-    [AGJointOperationSDK setClientId:@"B962NAbX3JmEth8b" clientSecret:@"d0ce2fc90d85cec0e9f58a197e8cd517"];
+    [AGJointOperationSDK setClientId:@"xxx" clientSecret:@"xxx"];
     [AGAnalysis setDebugModel:YES];
     [AGJointOperationSDK setSupportedInterfaceOrientations:UIInterfaceOrientationMaskAll];
     [AGAnalysis sendLaunchEventWithExtraData:nil completionBlock:nil];
-//    [AGJointOperationSDK setRoleId:@"fdsaf"];
-//    [AGAnalysis sendRoleRegisterEventWithExtraData:nil completionBlock:nil];
-    
     return YES;
 }
 
