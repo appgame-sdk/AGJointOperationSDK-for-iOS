@@ -4,21 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		+/pSlzmIV0TU1eDLCOaZ05Jnb1E=
-		</data>
 		<key>Headers/AGAnalysis.h</key>
 		<data>
-		6EXlRNJjrUR9z7v6SnDsF+NrT9k=
+		cOa9/aV67eCYwYcomO++6uQJGng=
 		</data>
 		<key>Headers/AGConstants.h</key>
 		<data>
-		7gVK+fh+SEMtMDWw6xS0swNhsas=
+		J9DuZienKlCeT3vA09QBVI0bPJQ=
 		</data>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<data>
-		6PSJGOPBOfZx4LM+gfccWyhjLSE=
+		oPQ5GuQKknsRKL+KT/jI8m4T88s=
 		</data>
 		<key>Headers/AGPurchase.h</key>
 		<data>
@@ -34,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		J+OaaNJkQNz6sDLtdBjbP32b5nc=
+		gwV2ZCcZvfAw5Up4dfURvEgLN7g=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -43,33 +39,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6EXlRNJjrUR9z7v6SnDsF+NrT9k=
+			cOa9/aV67eCYwYcomO++6uQJGng=
 			</data>
 			<key>hash2</key>
 			<data>
-			ekMh02zEFEcU9bVBtKc/ypFWSnJDt0AjzpAPuJMzVgc=
+			u7nFhgBqC6NtSy1j8PpVKE0gfvjvPzjA+5ANHoaGU6M=
 			</data>
 		</dict>
 		<key>Headers/AGConstants.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7gVK+fh+SEMtMDWw6xS0swNhsas=
+			J9DuZienKlCeT3vA09QBVI0bPJQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			UaXFIIgBkz/zk68kwh/h1OSuCRbKsb4yEf/07C+FI1M=
+			/Ox+QxgVVgJRpDqkPjaKKwlTOvEz6YSsdeFKnskXlcc=
 			</data>
 		</dict>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6PSJGOPBOfZx4LM+gfccWyhjLSE=
+			oPQ5GuQKknsRKL+KT/jI8m4T88s=
 			</data>
 			<key>hash2</key>
 			<data>
-			E5gFmNxy8jX2ScyA7nhfqt6hIwku0/TnE4kBw5+NDlU=
+			XK7bdHPbkqGZk/jn1xU7XRroi89owdGIvbbh+UqGNnw=
 			</data>
 		</dict>
 		<key>Headers/AGPurchase.h</key>

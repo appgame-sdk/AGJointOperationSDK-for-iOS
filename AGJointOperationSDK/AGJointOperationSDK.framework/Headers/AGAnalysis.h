@@ -14,10 +14,14 @@ typedef void (^ErrorBlock)(NSError *error);
 + (void)sendAppActivationDataWithCompletionBlock:(void(^)(NSError *error))block;
 
 
+
++ (void)setDebugModel:(BOOL)debug __attribute__((deprecated("使用 setDebugMode: 代替")));
+
 /**
  * 设置调试模式
  */
-+ (void)setDebugModel:(BOOL)debug;
++ (void)setDebugMode:(BOOL)debug;
+
 /**
  初始化设备启动事件的相关数据 (在应用启动初始化时调用，调用前必须配置好 clientId 和 clientSecret)
 
@@ -39,7 +43,7 @@ typedef void (^ErrorBlock)(NSError *error);
 
 
 /**
- 上传角色登入事件 (在成功登入游戏时调用)
+ 上传角色登入事件 (在角色成功进入游戏时调用)
  
  @param extraData 扩展数据
  @param block     完成回调
@@ -147,8 +151,8 @@ typedef void (^ErrorBlock)(NSError *error);
  @param dungeonType 副本类型（普通， 精英， .....）
  @param dungeonID   副本编号
  @param isAuto      是否自动战斗（'1' - 自动战斗， '0' - 非自动战斗， 默认非自动战斗）
- @param maiden      是否初次胜利（'1' - 初次胜利， '0' - 非初次胜利， 默认非初次胜利）
- @param sweep       是否扫荡副本（'1' - 扫荡副本， '0' - 非扫荡副本， 默认非扫荡副本）
+ @param isMaiden      是否初次胜利（'1' - 初次胜利， '0' - 非初次胜利， 默认非初次胜利）
+ @param isSweep       是否扫荡副本（'1' - 扫荡副本， '0' - 非扫荡副本， 默认非扫荡副本）
  @param result      战斗结果（'0' - 战斗失败， '1' - 一星胜利， .....）
  @param reason      战斗失败原因
  @param duration    副本战斗时长（秒）

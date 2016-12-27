@@ -69,9 +69,9 @@ pod update
 	> 两个文件需在同一目录下
 	
 	![](http://o9xc0bh9t.bkt.clouddn.com/QQ20161215-114953.png)
-2. 添加系统库`MobileCoreServices.framework`，`SystemConfiguration.framework`，`AdSupport.framework`和`UIKit.framework`依赖。
+2. 添加系统库`MobileCoreServices.framework`，`SystemConfiguration.framework`，`AdSupport.framework`，`UIKit.framework`，`libsqlite3.tbd`。
 
-	![](http://o9xc0bh9t.bkt.clouddn.com/14817739910204.jpg)
+	![](http://o9xc0bh9t.bkt.clouddn.com/14828273371003.jpg)
 3. 配置工程。
 	- 添加`-ObjC`标志到Other Linker Flags。
 	
@@ -94,7 +94,7 @@ pod update
 
 //默认为正式环境，NO为测试环境
 [AGJointOperationSDK setProductionMode:NO];
-[AGJointOperationSDK setClientId:@"你的client id" clientSecret:@"你的client secret"];
+[AGJointOperationSDK setClientId:@"你的client id" clientSecret:@"你的client secret" reYunAppKey:@"热云appKey"];
 ```
 显示登录界面
 
@@ -139,7 +139,7 @@ pod update
 ```Objective-C
 // 开启debug模式下，您可以实时观察数据变化
 // 默认为关闭状态
-[AGAnalysis setDebugModel:YES];
+[AGAnalysis setDebugMode:YES];
 ```
 * 调用
 
@@ -233,6 +233,9 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.1.0
+	- 加入热云统计
+	- 修复若干bug。
 - 1.0.16
 	- 优化统计接口。
 	- 修复若干bug。
