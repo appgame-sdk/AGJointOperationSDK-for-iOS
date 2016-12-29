@@ -24,8 +24,9 @@
 	- [x] 封装StoreKit内购过程，方便用户一个函数搞定内购
 	- [x] 内置本地收据验证和服务端收据验证 
 - [x] 支持数据统计分析
-- [x] 支持IPv6
-	- [x] 苹果明文规定，2016年6月1日开始所有提交到App Store的应用必须支持IPv6-only网络，为确保项目能正常通过审核，请在项目中增加相关配置来适应App Store的新策略。
+- [x] 网络及接口
+	- [x] 支持IPv6。苹果明文规定，2016年6月1日开始所有提交到App Store的应用必须支持IPv6-only网络，为确保项目能正常通过审核，请在项目中增加相关配置来适应App Store的新策略。
+	- [x] 支持https访问。SDK中所有接口在正式环境下使用`https`接口，测试环境下使用`http`接口提交数据。
 	
 ## 不支持功能
 
@@ -233,6 +234,10 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.1.1
+	- 全面支持https接口。
+	- 规范一些接口的命名。
+	- 修复若干bug。
 - 1.1.0
 	- 加入热云统计
 	- 修复若干bug。
