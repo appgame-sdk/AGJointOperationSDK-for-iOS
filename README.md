@@ -234,6 +234,8 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.1.2
+	- 修复重复记录账号的bug。
 - 1.1.1
 	- 全面支持https接口。
 	- 规范一些接口的命名。
