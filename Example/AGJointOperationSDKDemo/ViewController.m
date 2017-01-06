@@ -72,4 +72,15 @@
         NSLog(@"恢复购买失败%@", error);
     }];
 }
+
+- (IBAction)logout:(id)sender {
+    [AGUser logOutWithCompletionBlock:^(BOOL success, NSError * _Nonnull error) {
+        if (success) {
+            NSLog(@"登出成功");
+        }else {
+            NSLog(@"%@", error);
+        }
+    }];
+}
+
 @end

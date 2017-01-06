@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,17 +18,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任玩堂联运SDKDemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLL-zQ-wFr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="任玩堂联运SDKDemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLL-zQ-wFr">
                                 <rect key="frame" x="185" y="28" width="231" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uc3-3A-nJT">
-                                <rect key="frame" x="200" y="67" width="200" height="44"/>
+                                <rect key="frame" x="87.5" y="67" width="200" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="mPH-W8-qZl"/>
                                     <constraint firstAttribute="width" constant="200" id="vx3-du-0Lv"/>
@@ -35,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fym-WX-o0X">
-                                <rect key="frame" x="200" y="121" width="200" height="44"/>
+                                <rect key="frame" x="87.5" y="121" width="200" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="A7i-v4-HHZ"/>
                                     <constraint firstAttribute="width" constant="200" id="L8B-gm-IMm"/>
@@ -46,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e63-Dw-UFA">
-                                <rect key="frame" x="200" y="175" width="200" height="44"/>
+                                <rect key="frame" x="87.5" y="175" width="200" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="UU9-CQ-Atl"/>
                                     <constraint firstAttribute="width" constant="200" id="inU-69-HRg"/>
@@ -57,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akD-7O-tKC">
-                                <rect key="frame" x="200" y="227" width="200" height="44"/>
+                                <rect key="frame" x="87.5" y="227" width="200" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="T5N-tt-ciw"/>
                                     <constraint firstAttribute="width" constant="200" id="fjA-bp-rZo"/>
@@ -68,7 +72,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7K-AQ-abT">
-                                <rect key="frame" x="200" y="279" width="200" height="44"/>
+                                <rect key="frame" x="87.5" y="279" width="200" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="rRR-dS-gtn"/>
                                     <constraint firstAttribute="width" constant="200" id="tu7-gn-MR8"/>
@@ -78,8 +82,16 @@
                                     <action selector="restoreBuy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xnw-QH-6iv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVw-5S-AKD">
+                                <rect key="frame" x="164" y="331" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="登出"/>
+                                <connections>
+                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sz3-jp-E3R"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="akD-7O-tKC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0zc-tx-Ftp"/>
                             <constraint firstItem="Uc3-3A-nJT" firstAttribute="top" secondItem="BLL-zQ-wFr" secondAttribute="bottom" constant="10" id="FIW-hU-9xV"/>
@@ -98,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="636" y="479"/>
+            <point key="canvasLocation" x="108" y="313"/>
         </scene>
     </scenes>
 </document>
