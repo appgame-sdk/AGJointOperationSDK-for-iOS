@@ -144,7 +144,8 @@
 				TargetAttributes = {
 					34AAE9471C91745800E32FDE = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 9ATJLJZ6BL;
+						DevelopmentTeam = J6473GZPP6;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -341,13 +342,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9ATJLJZ6BL;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = J6473GZPP6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AGJointOperationSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bsl.sydl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inone.shenyudalu002;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9a008bb5-d9b6-4170-a2c0-2eb8e0358cd0";
+				PROVISIONING_PROFILE_SPECIFIER = shenyudalu002_develop;
 			};
 			name = Debug;
 		};
@@ -357,13 +361,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9ATJLJZ6BL;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = J6473GZPP6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AGJointOperationSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bsl.sydl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inone.shenyudalu002;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "87bb1425-fab8-4447-87df-5575868a3016";
+				PROVISIONING_PROFILE_SPECIFIER = shenyudalu002_distribution;
 			};
 			name = Release;
 		};

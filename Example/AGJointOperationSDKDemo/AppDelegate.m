@@ -17,9 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [AGJointOperationSDK setProductionMode:NO];
-    [AGJointOperationSDK setClientId:@"xxx" clientSecret:@"xxx" reYunAppKey:@"sddd"];
-    [AGAnalysis setDebugMode:YES];
+    [AGJointOperationSDK setProductionMode:YES];
+    [AGJointOperationSDK setClientId:@"xxx" clientSecret:@"xxx" reYunAppKey:@"xxx"];
+//    [AGAnalysis setDebugMode:YES];
+    [AGJointOperationSDK setRoleId:@"tester001"];
     [AGJointOperationSDK setSupportedInterfaceOrientations:UIInterfaceOrientationMaskAll];
     [AGAnalysis sendLaunchEventWithExtraData:nil completionBlock:nil];
     return YES;
