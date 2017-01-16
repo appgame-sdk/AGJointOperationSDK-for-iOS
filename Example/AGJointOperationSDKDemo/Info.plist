@@ -18,6 +18,58 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>tencent1105898464</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wx009fbcef29b998a9</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wb811779025</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>QQ41eaabe0</string>
+			</array>
+		</dict>
+	</array>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>sinaweibo</string>
+        <string>sinaweibohd</string>
+        <string>sinaweibosso</string>
+        <string>sinaweibohdsso</string>
+        <string>weibosdk2.5</string>
+        <string>weibosdk</string>
+        <string>weixin</string>
+        <string>wechat</string>
+        <string>mqqOpensdkSSoLogin</string>
+        <string>mqqopensdkapiV2</string>
+        <string>mqqopensdkapiV3</string>
+        <string>wtloginmqq2</string>
+        <string>mqq</string>
+        <string>mqqapi</string>
+    </array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
