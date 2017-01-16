@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name             = "AGJointOperationSDK"
-  s.version          = "1.1.3"
+  s.version          = "1.1.4"
   s.summary          = "AppGame Joint Operation SDK for iOS"
   s.homepage         = "http://www.appgame.com"
   s.license          = 'Apache License, Version 2.0'
   s.author           = { "Mao" => "625257555@qq.com" }
   s.source           = { :git => "https://github.com/appgame-sdk/AGJointOperationSDK-for-iOS.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.frameworks = 'MobileCoreServices', 'SystemConfiguration', 'UIKit'
@@ -23,4 +23,13 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'AGJointOperationSDK/AGJointOperationSDK.framework'
   s.resources = 'AGJointOperationSDK/AGJointOperationSDKResource.bundle'
   s.xcconfig = {'OTHER_LDFLAGS' => '$(inherited) -ObjC'}
+
+  s.dependency 'ShareSDK3'
+  s.dependency 'MOBFoundation'
+	s.dependency 'ShareSDK3/ShareSDKPlatforms/QQ'
+	s.dependency 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+	s.dependency 'ShareSDK3/ShareSDKPlatforms/WeChat'
+	s.dependency 'ShareSDK3/PlatformConnector/QQ'
+	s.dependency 'ShareSDK3/PlatformConnector/SinaWeibo'
+	s.dependency 'ShareSDK3/PlatformConnector/WeChat'
 end

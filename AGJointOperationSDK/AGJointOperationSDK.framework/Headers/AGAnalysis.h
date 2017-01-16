@@ -151,8 +151,8 @@ typedef void (^ErrorBlock)(NSError *error);
  @param dungeonType 副本类型（普通， 精英， .....）
  @param dungeonID   副本编号
  @param isAuto      是否自动战斗（'1' - 自动战斗， '0' - 非自动战斗， 默认非自动战斗）
- @param isMaiden      是否初次胜利（'1' - 初次胜利， '0' - 非初次胜利， 默认非初次胜利）
- @param isSweep       是否扫荡副本（'1' - 扫荡副本， '0' - 非扫荡副本， 默认非扫荡副本）
+ @param isMaiden    是否初次胜利（'1' - 初次胜利， '0' - 非初次胜利， 默认非初次胜利）
+ @param isSweep     是否扫荡副本（'1' - 扫荡副本， '0' - 非扫荡副本， 默认非扫荡副本）
  @param result      战斗结果（'0' - 战斗失败， '1' - 一星胜利， .....）
  @param reason      战斗失败原因
  @param duration    副本战斗时长（秒）
