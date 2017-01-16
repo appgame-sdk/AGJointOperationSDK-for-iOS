@@ -26,9 +26,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)handleLoginNotification:(NSNotification*)haha{
-    NSLog(@"%@", haha);
-}
 - (IBAction)showLoginUI:(id)sender {
     [AGUser showLoginUIWithAnimated:YES];
 }
@@ -83,4 +80,17 @@
     }];
 }
 
+- (void)handleLoginNotification:(NSNotification*)notification{
+    NSLog(@"%@", notification);
+    NSDictionary *userInfo = notification.userInfo;
+    if (userInfo[@"user"]) {
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
+        hud.label.text =  [userInfo[@"user"] username];
+        hud.mode = MBProgressHUDModeText;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [hud hideAnimated:YES];
+        });
+        
+    }
+}
 @end
