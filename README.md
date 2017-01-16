@@ -234,6 +234,8 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.1.4
+	- 支持微信、QQ、微博登录。 
 - 1.1.3
 	- 修复若干bug。
 - 1.1.2
