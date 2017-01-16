@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.author           = { "Mao" => "625257555@qq.com" }
   s.source           = { :git => "https://github.com/appgame-sdk/AGJointOperationSDK-for-iOS.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.frameworks = 'MobileCoreServices', 'SystemConfiguration', 'UIKit'
