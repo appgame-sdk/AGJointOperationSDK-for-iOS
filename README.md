@@ -66,6 +66,8 @@ pod update
 
 
 ### 手动添加
+>注：1.2.0 版本加入了第三方登录，如选择手动安装，需要在您的项目中手动配置shareSDK。建议使用pod安装 `AGJointOperationSDK`。
+
 1. 下载整个项目，将`AGJointOperationSDK.framework` 和 `AGJointOperationSDKResource.bundle`拖到您的工程内
 	> 两个文件需在同一目录下
 	
@@ -119,18 +121,6 @@ pod update
 } failure:^(NSError *error) {
 	  NSLog(@"购买失败");
 }];
-```
->注：为避免购买成功后因意外导致发送订单失败的情况，请在程序从后台唤醒或网络状态发生改变时调用 `restoreTransactionsOnSuccess:` 接口来检测订单状态，以保证订单能及时处理。
-
-```Objective-C
-// 从后台唤醒
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    [[AGPurchase sharedInstance] restoreTransactionsOnSuccess:^(NSArray *transactions) {
-        NSLog(@"恢复购买成功%@", transactions);
-    } failure:^(NSError *error) {
-        NSLog(@"恢复购买失败%@", error);
-    }];
-}
 ```
 
 数据统计分析
@@ -234,8 +224,11 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.2.0
+	- 加入第三方登录。
+	- 修复若干bug。
 - 1.1.4
-	- 支持微信、QQ、微博登录。 
+	- 优化内购流程。 
 - 1.1.3
 	- 修复若干bug。
 - 1.1.2
