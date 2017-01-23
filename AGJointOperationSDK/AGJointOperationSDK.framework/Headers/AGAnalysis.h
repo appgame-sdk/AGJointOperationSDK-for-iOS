@@ -68,7 +68,7 @@ typedef void (^ErrorBlock)(NSError *error);
  @param payParams 支付相关参数
  @param block     完成回调
  */
-+ (void)sendPayEventWithParams:(NSDictionary *)payParams completionBlock:(ErrorBlock)block;
++ (void)sendPayEventWithParams:(NSMutableDictionary *)payParams completionBlock:(ErrorBlock)block;
 
 
 /**

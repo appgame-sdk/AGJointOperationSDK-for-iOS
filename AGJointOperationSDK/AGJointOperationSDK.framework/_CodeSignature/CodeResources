@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		lw0JoPt3rCalWqgmtvlaYqtreeg=
-		</data>
 		<key>Headers/AGAnalysis.h</key>
 		<data>
-		WQBl2z9L93j0hBrxaz0gRroLvbw=
+		cOa9/aV67eCYwYcomO++6uQJGng=
 		</data>
 		<key>Headers/AGConstants.h</key>
 		<data>
@@ -18,7 +14,7 @@
 		</data>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<data>
-		b/dkM/mELMyTLu3AZD65KwGpbvY=
+		oPQ5GuQKknsRKL+KT/jI8m4T88s=
 		</data>
 		<key>Headers/AGPurchase.h</key>
 		<data>
@@ -30,7 +26,7 @@
 		</data>
 		<key>Headers/AGUser.h</key>
 		<data>
-		+5HleMqtFQkYFPqGvhDZqf8ktc8=
+		a9vigzP+zR/OvuAXYdtc5FxUED0=
 		</data>
 		<key>Headers/AGVendorShare.h</key>
 		<data>
@@ -38,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zkCILd5spF+1FtZNfTbSPdWSMB4=
+		gwV2ZCcZvfAw5Up4dfURvEgLN7g=
 		</data>
 		<key>ShareSDK.bundle/Base.lproj/ShareSDK.strings</key>
 		<dict>
@@ -394,11 +390,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WQBl2z9L93j0hBrxaz0gRroLvbw=
+			cOa9/aV67eCYwYcomO++6uQJGng=
 			</data>
 			<key>hash2</key>
 			<data>
-			nfxMfIWdywNFC/43rOJAbToJQADQN+DFVc3YOMCOc00=
+			u7nFhgBqC6NtSy1j8PpVKE0gfvjvPzjA+5ANHoaGU6M=
 			</data>
 		</dict>
 		<key>Headers/AGConstants.h</key>
@@ -416,11 +412,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b/dkM/mELMyTLu3AZD65KwGpbvY=
+			oPQ5GuQKknsRKL+KT/jI8m4T88s=
 			</data>
 			<key>hash2</key>
 			<data>
-			/Nafz2KTJiYsRJc6QMsrSnUE3y1ktWytAKnz/w3/Pvk=
+			XK7bdHPbkqGZk/jn1xU7XRroi89owdGIvbbh+UqGNnw=
 			</data>
 		</dict>
 		<key>Headers/AGPurchase.h</key>
@@ -449,11 +445,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+5HleMqtFQkYFPqGvhDZqf8ktc8=
+			a9vigzP+zR/OvuAXYdtc5FxUED0=
 			</data>
 			<key>hash2</key>
 			<data>
-			As55koqxOfLehrjp7B2jWYWh1XjvRORce8G7Ko//lMI=
+			oadnUX79yKZIUdzYPoLz/gCd4+SxIEDHhIt/P5ZvOt4=
 			</data>
 		</dict>
 		<key>Headers/AGVendorShare.h</key>
