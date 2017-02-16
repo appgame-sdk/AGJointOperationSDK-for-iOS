@@ -66,8 +66,6 @@ typedef void (^BindFaceBookCompletion)(AGUser *user, NSError *error);
 @property (nullable, nonatomic, copy, readonly) NSString *cityName;
 ///用户描述
 @property (nullable, nonatomic, copy, readonly) NSString *info;
-///用户第三方平台描述
-@property (nonatomic, strong, readonly) NSDictionary *provider_info;
 ///是否为匿名（游客）登录
 @property (nonatomic, assign, readonly, getter=isAnonymous) BOOL anonymous;
 
