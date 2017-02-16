@@ -36,6 +36,15 @@
 
 
 /**
+ 显示分享页面
+
+ @param title 分享标题
+ @param contentText 分享文字
+ @param imageArray 分享照片集合
+ */
++ (void)sharedWithTitle:(NSString *)title contentText:(NSString *)contentText image:(NSArray *)imageArray; 
+
+/**
  获取各平台对应的appId
 
  @param platform 平台类型
