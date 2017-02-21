@@ -84,6 +84,14 @@ pod update
 		
 	  ![](http://o9xc0bh9t.bkt.clouddn.com/14817744325203.jpg)
 	  
+	- 配置QQ、微信、微博
+	  ![](http://o9xc0bh9t.bkt.clouddn.com/14876729585276.jpg)
+	  
+	- `info.plist` 添加白名单
+	
+	  ![](http://o9xc0bh9t.bkt.clouddn.com/14876732573247.jpg)
+	  
+
 ### 示例代码
 
 在需要的地方添加
@@ -97,7 +105,12 @@ pod update
 
 //默认为正式环境，NO为测试环境
 [AGJointOperationSDK setProductionMode:NO];
+
+//配置clentId, seceret 和 热云 appKey
 [AGJointOperationSDK setClientId:@"你的client id" clientSecret:@"你的client secret" reYunAppKey:@"热云appKey"];
+
+//配置shareSDK
+[AGVendorShare registerAppWithShareAppId:@"shareAppId" WiboAppId:@"weiboAppId" andWeiboSecret:@"weiboSecret" weChatAppId:@"weChatId" andWeChatSecret:@"WeChatSecret" QQAppId:@"QQAppId" andQQSecret:@"QQSecret"];
 ```
 显示登录界面
 
@@ -125,7 +138,7 @@ pod update
 
 数据统计分析
 
-* 开启debug
+* 开启数据统计的 debug 模式
 
 ```Objective-C
 // 开启debug模式下，您可以实时观察数据变化
@@ -224,6 +237,8 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.2.1 
+	- 加入第三方分享。
 - 1.2.0
 	- 加入第三方登录。
 	- 修复若干bug。
