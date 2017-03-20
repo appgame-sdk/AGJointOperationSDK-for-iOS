@@ -31,15 +31,6 @@ typedef void (^ErrorBlock)(NSError *error);
 + (void)sendLaunchEventWithExtraData:(NSDictionary *)extraData
                      completionBlock:(ErrorBlock)block;
 
-
-/**
- 上传应用安装事件(在应用初始化时调用)
-
- @param extraData 扩展数据
- @param block     完成回调
- */
-+ (void)sendInstallEventWithExtraData:(NSDictionary *)extraData
-                     completionBlock:(ErrorBlock)block;
 /**
  上传角色注册事件 (在成功创建新的游戏角色时调用)
  
