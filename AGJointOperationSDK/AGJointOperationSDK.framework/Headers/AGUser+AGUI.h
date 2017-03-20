@@ -25,5 +25,6 @@
 + (void)showBindOrUnbindPhoneUIWithAnimated:(BOOL)animated;
 
 
++ (void)showUserCenterWithAnimated:(BOOL)animated;
 
 @end
