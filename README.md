@@ -237,7 +237,7 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
-- 1.2.2
+- 1.3.1
 	- 修改了分享接口，增加了 URL 参数。
 	- 修改了游客登录的文案。
 - 1.2.1 
