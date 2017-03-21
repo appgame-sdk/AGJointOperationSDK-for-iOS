@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="任玩堂联运SDKDemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLL-zQ-wFr">
-                                <rect key="frame" x="185" y="28" width="231" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任玩堂联运SDKDemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLL-zQ-wFr">
+                                <rect key="frame" x="71.5" y="28" width="232" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -82,12 +82,25 @@
                                     <action selector="restoreBuy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xnw-QH-6iv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVw-5S-AKD">
-                                <rect key="frame" x="164" y="331" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVw-5S-AKD">
+                                <rect key="frame" x="172" y="439" width="31" height="30"/>
                                 <state key="normal" title="登出"/>
                                 <connections>
                                     <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sz3-jp-E3R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtW-Bw-Izm">
+                                <rect key="frame" x="156" y="391" width="62" height="30"/>
+                                <state key="normal" title="用户中心"/>
+                                <connections>
+                                    <action selector="showUserCenter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kw9-D2-V8m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSw-Jo-59X">
+                                <rect key="frame" x="156" y="338" width="62" height="30"/>
+                                <state key="normal" title="分享测试"/>
+                                <connections>
+                                    <action selector="showShareView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bj5-pf-NtI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -96,13 +109,19 @@
                             <constraint firstItem="akD-7O-tKC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0zc-tx-Ftp"/>
                             <constraint firstItem="Uc3-3A-nJT" firstAttribute="top" secondItem="BLL-zQ-wFr" secondAttribute="bottom" constant="10" id="FIW-hU-9xV"/>
                             <constraint firstItem="akD-7O-tKC" firstAttribute="top" secondItem="e63-Dw-UFA" secondAttribute="bottom" constant="8" id="Lx2-2r-PRF"/>
+                            <constraint firstItem="FVw-5S-AKD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mkg-BV-ZOK"/>
+                            <constraint firstItem="dtW-Bw-Izm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N5t-d0-UiL"/>
                             <constraint firstItem="e63-Dw-UFA" firstAttribute="top" secondItem="fym-WX-o0X" secondAttribute="bottom" constant="10" id="Nr9-1t-HHE"/>
                             <constraint firstItem="BLL-zQ-wFr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QaF-kT-3VT"/>
                             <constraint firstItem="Q7K-AQ-abT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ULQ-6g-tiE"/>
                             <constraint firstItem="e63-Dw-UFA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bKZ-RM-ncY"/>
                             <constraint firstItem="fym-WX-o0X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c2P-om-3RN"/>
+                            <constraint firstItem="uSw-Jo-59X" firstAttribute="top" secondItem="Q7K-AQ-abT" secondAttribute="bottom" constant="15" id="dTX-B4-bQZ"/>
+                            <constraint firstItem="uSw-Jo-59X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iFT-lL-HpT"/>
                             <constraint firstItem="Q7K-AQ-abT" firstAttribute="top" secondItem="akD-7O-tKC" secondAttribute="bottom" constant="8" id="n3h-FF-cmz"/>
                             <constraint firstItem="BLL-zQ-wFr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nEd-Ne-f0f"/>
+                            <constraint firstItem="dtW-Bw-Izm" firstAttribute="top" secondItem="uSw-Jo-59X" secondAttribute="bottom" constant="23" id="ndF-os-a9e"/>
+                            <constraint firstItem="FVw-5S-AKD" firstAttribute="top" secondItem="dtW-Bw-Izm" secondAttribute="bottom" constant="18" id="ogC-Z6-8JN"/>
                             <constraint firstItem="fym-WX-o0X" firstAttribute="top" secondItem="Uc3-3A-nJT" secondAttribute="bottom" constant="10" id="pUh-hP-aMV"/>
                             <constraint firstItem="Uc3-3A-nJT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vMT-J1-jq4"/>
                         </constraints>
@@ -110,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="313"/>
+            <point key="canvasLocation" x="-215" y="281"/>
         </scene>
     </scenes>
 </document>

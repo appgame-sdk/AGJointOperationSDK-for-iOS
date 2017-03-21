@@ -12,11 +12,16 @@
 
 @end
 
+
+/**
+ *  运行代码前，请替换相关参数配置
+ */
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     [AGJointOperationSDK setProductionMode:NO];
     
     [AGJointOperationSDK setSupportedInterfaceOrientations:UIInterfaceOrientationMaskPortrait];
