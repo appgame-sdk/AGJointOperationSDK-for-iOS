@@ -14,11 +14,10 @@
 		34AAE95B1C91745800E32FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34AAE9591C91745800E32FDE /* LaunchScreen.storyboard */; };
 		34AAE9641C91757800E32FDE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AAE9631C91757800E32FDE /* MBProgressHUD.m */; };
 		34AAE9661C9175D200E32FDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34AAE9651C9175D200E32FDE /* Main.storyboard */; };
-		A5634E1038D16A9CEC739E1D /* Pods_AGJointOperationSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7225B19FDED845CB90EBBB /* Pods_AGJointOperationSDKDemo.framework */; };
+		87E7C416C6068E71D5B866CC /* libPods-AGJointOperationSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798577447CA6BEC3D1A91499 /* libPods-AGJointOperationSDKDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E7225B19FDED845CB90EBBB /* Pods_AGJointOperationSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AGJointOperationSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		295FE051E650C13C56D2C180 /* Pods-AGJointOperationSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGJointOperationSDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AGJointOperationSDKDemo/Pods-AGJointOperationSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		34AAE9481C91745800E32FDE /* AGJointOperationSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGJointOperationSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34AAE94C1C91745800E32FDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		34AAE9621C91757800E32FDE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		34AAE9631C91757800E32FDE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		34AAE9651C9175D200E32FDE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		798577447CA6BEC3D1A91499 /* libPods-AGJointOperationSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AGJointOperationSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED131DE4A1342F54F340076 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D310C4263E457596A7E493D0 /* Pods-AGJointOperationSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGJointOperationSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AGJointOperationSDKDemo/Pods-AGJointOperationSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5634E1038D16A9CEC739E1D /* Pods_AGJointOperationSDKDemo.framework in Frameworks */,
+				87E7C416C6068E71D5B866CC /* libPods-AGJointOperationSDKDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				AED131DE4A1342F54F340076 /* Pods.framework */,
-				1E7225B19FDED845CB90EBBB /* Pods_AGJointOperationSDKDemo.framework */,
+				798577447CA6BEC3D1A91499 /* libPods-AGJointOperationSDKDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -346,7 +346,7 @@
 				DEVELOPMENT_TEAM = 6MUW6L4BTB;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AGJointOperationSDKDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.inone.mbzj001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -365,7 +365,7 @@
 				DEVELOPMENT_TEAM = 6MUW6L4BTB;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AGJointOperationSDKDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.inone.mbzj001;
 				PRODUCT_NAME = "$(TARGET_NAME)";

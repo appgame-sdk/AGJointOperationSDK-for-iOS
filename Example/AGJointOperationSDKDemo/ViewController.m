@@ -70,6 +70,16 @@
     }];
 }
 
+- (IBAction)showShareView:(id)sender {
+    NSArray *imageArray = @[[UIImage imageNamed:@"AGJointOperationSDKResource.bundle/vendorLogin_weibo"]];
+    
+    [AGVendorShare sharedWithTitle:@"分享测试" url:[NSURL URLWithString:@"http://www.baidu.com"] contentText:@"分享内容http://www.baidu.com" image:imageArray];
+}
+
+- (IBAction)showUserCenter:(id)sender {
+        [AGUser showUserCenterWithAnimated:YES];
+}
+
 - (IBAction)logout:(id)sender {
     [AGUser logOutWithCompletionBlock:^(BOOL success, NSError * _Nonnull error) {
         if (success) {
