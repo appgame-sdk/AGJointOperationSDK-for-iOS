@@ -25,6 +25,11 @@
 + (void)showBindOrUnbindPhoneUIWithAnimated:(BOOL)animated;
 
 
+/**
+ 显示用户中心
+
+ @param animated 是否动画方式显示
+ */
 + (void)showUserCenterWithAnimated:(BOOL)animated;
 
 @end
