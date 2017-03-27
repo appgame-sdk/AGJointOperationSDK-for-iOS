@@ -117,6 +117,11 @@ pod update
 ```Objective-C
 [AGUser showBindOrUnbindPhoneUIWithAnimated:YES];
 ```
+显示用户中心
+
+```Objective-C
+[AGUser showUserCenterWithAnimated:YES];
+```
 
 退出登录
 
@@ -237,7 +242,10 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.3.2
+	- 修复游戏内切换账号不能通知游戏的bug。
 - 1.3.1
+	- 增加了用户中心接口，可以选择接入。
 	- 修改了分享接口，增加了 URL 参数。
 	- 修改了游客登录的文案。
 - 1.2.1 
