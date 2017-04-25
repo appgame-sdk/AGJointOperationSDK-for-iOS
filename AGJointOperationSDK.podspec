@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   s.xcconfig = {'OTHER_LDFLAGS' => '$(inherited) -ObjC'}
 
   s.dependency 'ShareSDK3'
+  s.dependency 'ShareSDK3/ShareSDKUI'
   s.dependency 'MOBFoundation'
 	s.dependency 'ShareSDK3/ShareSDKPlatforms/QQ'
 	s.dependency 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
