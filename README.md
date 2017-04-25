@@ -251,7 +251,7 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
-- 1.3.4
+- 1.3.5
     - 优化第三方登录
     - 优化分享功能
 - 1.3.3

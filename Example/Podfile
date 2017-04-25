@@ -6,6 +6,6 @@ target 'AGJointOperationSDKDemo' do
   # use_frameworks!
 
   # Pods for AGJointOperationSDKDemo
-    pod 'AGJointOperationSDK', '~> 1.3.1'
+    pod 'AGJointOperationSDK', '~> 1.3.3’
 
 end
