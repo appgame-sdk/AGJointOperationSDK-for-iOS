@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AGJointOperationSDK/AGVendorShare.h>
 #import <AGJointOperationSDK/AGJointOperationSDK.h>
 @interface AppDelegate ()
 
