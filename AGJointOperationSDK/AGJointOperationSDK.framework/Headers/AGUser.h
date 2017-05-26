@@ -70,6 +70,10 @@ typedef void (^BindFaceBookCompletion)(AGUser *user, NSError *error);
 @property (nonatomic, strong, readonly) NSDictionary *provider_info;
 ///是否为匿名（游客）登录
 @property (nonatomic, assign, readonly, getter=isAnonymous) BOOL anonymous;
+
+///是否实名认证
+@property (nonatomic, assign, readonly) BOOL identification;
+
 /**
  获得当前登录的用户，可能为nil。
  */
@@ -78,6 +82,7 @@ typedef void (^BindFaceBookCompletion)(AGUser *user, NSError *error);
  退出当前用户的登录状态。
  */
 + (void)logOutWithCompletionBlock:(void (^)(BOOL success, NSError *error))block;
+
 
 @end
 

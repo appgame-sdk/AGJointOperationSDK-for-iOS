@@ -32,4 +32,6 @@
  */
 + (void)showUserCenterWithAnimated:(BOOL)animated;
 
++ (void)showIdentification:(BOOL)animated;
+
 @end

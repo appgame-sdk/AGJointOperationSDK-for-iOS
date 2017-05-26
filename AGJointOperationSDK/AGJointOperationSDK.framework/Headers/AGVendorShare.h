@@ -6,6 +6,7 @@
 //  Copyright © 2017年 AppGame. All rights reserved.
 //
 #import <Foundation/Foundation.h>
+#ifndef VERSION_SPARE
 #import <ShareSDK/SSDKTypeDefine.h>
 
 
@@ -84,6 +85,7 @@ typedef NS_ENUM(NSUInteger, AGShareStatus){
  */
 + (void)sharedWithTitle:(UIView *)view items:(NSArray*)items title:(NSString *)title url:(NSURL *)url contentText:(NSString *)contentText image:(NSArray *)imageArray completionBlock:(void (^)(AGShareStatus sharestatus, NSError *error))block;
 
+
 /**
  获取各平台对应的appId
 
@@ -93,3 +95,4 @@ typedef NS_ENUM(NSUInteger, AGShareStatus){
 + (NSString *)getAppIdWithPlatform:(SSDKPlatformType)platform;
 
 @end
+#endif
