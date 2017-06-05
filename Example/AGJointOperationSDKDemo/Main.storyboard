@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uc3-3A-nJT">
-                                <rect key="frame" x="87.5" y="67" width="200" height="44"/>
+                                <rect key="frame" x="87" y="67" width="200" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="mPH-W8-qZl"/>
                                     <constraint firstAttribute="width" constant="200" id="vx3-du-0Lv"/>
@@ -39,9 +39,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fym-WX-o0X">
-                                <rect key="frame" x="87.5" y="121" width="200" height="44"/>
+                                <rect key="frame" x="87" y="121" width="200" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="A7i-v4-HHZ"/>
+                                    <constraint firstAttribute="height" constant="38" id="A7i-v4-HHZ"/>
                                     <constraint firstAttribute="width" constant="200" id="L8B-gm-IMm"/>
                                 </constraints>
                                 <state key="normal" title="显示绑定或者解绑手机号UI"/>
@@ -50,9 +50,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e63-Dw-UFA">
-                                <rect key="frame" x="87.5" y="175" width="200" height="44"/>
+                                <rect key="frame" x="87" y="169" width="200" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="UU9-CQ-Atl"/>
+                                    <constraint firstAttribute="height" constant="38" id="UU9-CQ-Atl"/>
                                     <constraint firstAttribute="width" constant="200" id="inU-69-HRg"/>
                                 </constraints>
                                 <state key="normal" title="消耗商品测试"/>
@@ -61,9 +61,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akD-7O-tKC">
-                                <rect key="frame" x="87.5" y="227" width="200" height="44"/>
+                                <rect key="frame" x="87" y="215" width="200" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="T5N-tt-ciw"/>
+                                    <constraint firstAttribute="height" constant="38" id="T5N-tt-ciw"/>
                                     <constraint firstAttribute="width" constant="200" id="fjA-bp-rZo"/>
                                 </constraints>
                                 <state key="normal" title="非消耗商品测试"/>
@@ -72,9 +72,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7K-AQ-abT">
-                                <rect key="frame" x="87.5" y="279" width="200" height="44"/>
+                                <rect key="frame" x="87" y="261" width="200" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="rRR-dS-gtn"/>
+                                    <constraint firstAttribute="height" constant="38" id="rRR-dS-gtn"/>
                                     <constraint firstAttribute="width" constant="200" id="tu7-gn-MR8"/>
                                 </constraints>
                                 <state key="normal" title="购买恢复"/>
@@ -82,54 +82,90 @@
                                     <action selector="restoreBuy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xnw-QH-6iv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVw-5S-AKD">
-                                <rect key="frame" x="172" y="439" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtg-64-iHf">
+                                <rect key="frame" x="87" y="307" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ard-Cd-L3y"/>
+                                    <constraint firstAttribute="height" constant="35" id="Uuv-Yq-lwh"/>
+                                </constraints>
                                 <state key="normal" title="登出"/>
                                 <connections>
-                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sz3-jp-E3R"/>
+                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vgq-UG-se9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtW-Bw-Izm">
-                                <rect key="frame" x="156" y="391" width="62" height="30"/>
-                                <state key="normal" title="用户中心"/>
-                                <connections>
-                                    <action selector="showUserCenter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kw9-D2-V8m"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVh-3T-TQd">
+                                <rect key="frame" x="87" y="350" width="200" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3lr-rQ-pPY"/>
+                                    <constraint firstAttribute="height" constant="38" id="HGP-bE-vsI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="r8g-rt-k1S"/>
+                                </constraints>
+                                <state key="normal" title="绑定Facebook"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSw-Jo-59X">
-                                <rect key="frame" x="156" y="338" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0u-uu-soF">
+                                <rect key="frame" x="137" y="396" width="100" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="RMO-iJ-3nZ"/>
+                                    <constraint firstAttribute="height" constant="38" id="eHp-MX-Ben"/>
+                                </constraints>
                                 <state key="normal" title="分享测试"/>
                                 <connections>
-                                    <action selector="showShareView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bj5-pf-NtI"/>
+                                    <action selector="sharedTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IMo-bb-PT7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpH-dF-OkJ">
+                                <rect key="frame" x="137" y="454" width="100" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FdS-Ti-Eem"/>
+                                    <constraint firstAttribute="height" constant="38" id="RPc-yq-3I2"/>
+                                </constraints>
+                                <state key="normal" title="用户中心"/>
+                                <connections>
+                                    <action selector="showUserCenter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NeQ-SG-b9i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jzl-Ps-AL7">
+                                <rect key="frame" x="137" y="507" width="100" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="38o-80-pGO"/>
+                                    <constraint firstAttribute="height" constant="38" id="Y59-zV-4Kg"/>
+                                </constraints>
+                                <state key="normal" title="实名认证"/>
+                                <connections>
+                                    <action selector="showIdentificationWindow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sBB-L5-TrW"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="akD-7O-tKC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0zc-tx-Ftp"/>
+                            <constraint firstItem="Jzl-Ps-AL7" firstAttribute="top" secondItem="XpH-dF-OkJ" secondAttribute="bottom" constant="15" id="5Zy-Ra-NPp"/>
+                            <constraint firstItem="Rtg-64-iHf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BX6-R8-wF2"/>
+                            <constraint firstItem="XpH-dF-OkJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DEs-mO-Owb"/>
                             <constraint firstItem="Uc3-3A-nJT" firstAttribute="top" secondItem="BLL-zQ-wFr" secondAttribute="bottom" constant="10" id="FIW-hU-9xV"/>
                             <constraint firstItem="akD-7O-tKC" firstAttribute="top" secondItem="e63-Dw-UFA" secondAttribute="bottom" constant="8" id="Lx2-2r-PRF"/>
-                            <constraint firstItem="FVw-5S-AKD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mkg-BV-ZOK"/>
-                            <constraint firstItem="dtW-Bw-Izm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N5t-d0-UiL"/>
                             <constraint firstItem="e63-Dw-UFA" firstAttribute="top" secondItem="fym-WX-o0X" secondAttribute="bottom" constant="10" id="Nr9-1t-HHE"/>
                             <constraint firstItem="BLL-zQ-wFr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QaF-kT-3VT"/>
                             <constraint firstItem="Q7K-AQ-abT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ULQ-6g-tiE"/>
                             <constraint firstItem="e63-Dw-UFA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bKZ-RM-ncY"/>
                             <constraint firstItem="fym-WX-o0X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c2P-om-3RN"/>
-                            <constraint firstItem="uSw-Jo-59X" firstAttribute="top" secondItem="Q7K-AQ-abT" secondAttribute="bottom" constant="15" id="dTX-B4-bQZ"/>
-                            <constraint firstItem="uSw-Jo-59X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iFT-lL-HpT"/>
+                            <constraint firstItem="eVh-3T-TQd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gED-K9-jll"/>
+                            <constraint firstItem="i0u-uu-soF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iIh-PG-PIT"/>
                             <constraint firstItem="Q7K-AQ-abT" firstAttribute="top" secondItem="akD-7O-tKC" secondAttribute="bottom" constant="8" id="n3h-FF-cmz"/>
                             <constraint firstItem="BLL-zQ-wFr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nEd-Ne-f0f"/>
-                            <constraint firstItem="dtW-Bw-Izm" firstAttribute="top" secondItem="uSw-Jo-59X" secondAttribute="bottom" constant="23" id="ndF-os-a9e"/>
-                            <constraint firstItem="FVw-5S-AKD" firstAttribute="top" secondItem="dtW-Bw-Izm" secondAttribute="bottom" constant="18" id="ogC-Z6-8JN"/>
                             <constraint firstItem="fym-WX-o0X" firstAttribute="top" secondItem="Uc3-3A-nJT" secondAttribute="bottom" constant="10" id="pUh-hP-aMV"/>
+                            <constraint firstItem="i0u-uu-soF" firstAttribute="top" secondItem="eVh-3T-TQd" secondAttribute="bottom" constant="8" id="q4C-wg-O94"/>
+                            <constraint firstItem="Jzl-Ps-AL7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s0Y-vP-SV6"/>
+                            <constraint firstItem="Rtg-64-iHf" firstAttribute="top" secondItem="Q7K-AQ-abT" secondAttribute="bottom" constant="8" id="tb6-1C-jUe"/>
+                            <constraint firstItem="XpH-dF-OkJ" firstAttribute="top" secondItem="i0u-uu-soF" secondAttribute="bottom" constant="20" id="uFQ-t8-2fx"/>
+                            <constraint firstItem="eVh-3T-TQd" firstAttribute="top" secondItem="Rtg-64-iHf" secondAttribute="bottom" constant="8" id="uFj-7A-9za"/>
                             <constraint firstItem="Uc3-3A-nJT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vMT-J1-jq4"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215" y="281"/>
+            <point key="canvasLocation" x="-42.399999999999999" y="-27.436281859070466"/>
         </scene>
     </scenes>
 </document>
