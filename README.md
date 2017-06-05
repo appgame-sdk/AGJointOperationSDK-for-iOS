@@ -116,7 +116,7 @@ pod update
 显示登录界面
 
 ```Objective-C
-[AGUser showBindOrUnbindPhoneUIWithAnimated:YES];
+[AGUser showLoginUIWithAnimated:YES];
 ```
 显示用户中心
 
