@@ -17,6 +17,7 @@
 
 - [x] 支持任玩堂账号中心
 	- [x] 支持手机号码和玩+号注册和登录
+	- [x] 支持QQ、微信、微博登录和分享
 	- [x] 支持手机绑定
 	- [x] 支持手机号重置密码
 	- [x] 支持游客登录
@@ -115,7 +116,7 @@ pod update
 显示登录界面
 
 ```Objective-C
-[AGUser showBindOrUnbindPhoneUIWithAnimated:YES];
+[AGUser showLoginUIWithAnimated:YES];
 ```
 显示用户中心
 
@@ -130,6 +131,7 @@ pod update
    
 }];
 ```
+
 内购
 
 ```Objective-C
@@ -139,6 +141,13 @@ pod update
 } failure:^(NSError *error) {
 	  NSLog(@"购买失败");
 }];
+```
+
+分享到新浪微博，需要把链接加到分享内容里。如下所示，要分享的链接为 `http://www.baidu.com`
+
+```Objective-C
+NSArray *imageArray = @[[UIImage imageNamed:@"testImage"]];
+[AGVendorShare sharedWithTitle:@"分享测试" url:[NSURL URLWithString:@"http://www.baidu.com"] contentText:@"分享内容http://www.baidu.com" image:imageArray];
 ```
 
 数据统计分析
