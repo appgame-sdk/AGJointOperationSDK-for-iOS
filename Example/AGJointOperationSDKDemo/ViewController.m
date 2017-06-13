@@ -97,8 +97,7 @@
     }];
 }
 
-- (IBAction)sharedTest:(id)sender {
-    
+- (IBAction)showShearView:(id)sender{
     NSArray *imageArray = @[[UIImage imageNamed:@"AGJointOperationSDKResource.bundle/vendorLogin_weibo"]];
     
     //设置显示平台 只能分享视频的YouTube MeiPai 不显示
@@ -108,21 +107,15 @@
                        @(SSDKPlatformTypeSinaWeibo)
                        ];
     
-    //对于ipad来说要添加参照view，通过参照view的显示位置，决定分享弹窗的显示位置
-    float x = self.view.frame.size.width/2;
-    float y = self.view.frame.size.height + 20;
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(x, y, 10, 10)];
+//    [self.view addSubview:view];
     
-    [self.view addSubview:view];
-    
-    [AGVendorShare sharedWithTitle:view //pad的话一定要传参照的view
+    [AGVendorShare sharedWithView:self.view
                              items:items
                              title:@"分享测试"
                                url:[NSURL URLWithString:@"http://www.baidu.com"]
                        contentText:@"分享内容http://www.baidu.com"
                              image:imageArray
                    completionBlock:^(AGShareStatus sharestatus, NSError *error) {
-                       [view removeFromSuperview];
                        
                        UIAlertView *alerView = [[UIAlertView alloc]initWithTitle:@"" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                        switch (sharestatus) {

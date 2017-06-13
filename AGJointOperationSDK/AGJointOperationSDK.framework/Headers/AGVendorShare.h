@@ -6,7 +6,6 @@
 //  Copyright © 2017年 AppGame. All rights reserved.
 //
 #import <Foundation/Foundation.h>
-#ifndef VERSION_SPARE
 #import <ShareSDK/SSDKTypeDefine.h>
 
 
@@ -14,7 +13,6 @@
  *  回复状态
  */
 typedef NS_ENUM(NSUInteger, AGShareStatus){
-    
     /**
      *  开始
      */
@@ -34,6 +32,7 @@ typedef NS_ENUM(NSUInteger, AGShareStatus){
      *  取消
      */
     AGShareStateCancel     = 3
+    
 };
 
 /**
@@ -76,14 +75,14 @@ typedef NS_ENUM(NSUInteger, AGShareStatus){
 /**
  分享兼容ipad
 
- @param view ipad的参照视图，分享弹窗在参照视图的正上方
+ @param view ipad的参照视图，分享弹窗在参照视图的正上方    //view替换为父视图控件 2017-6-5
  @param items 分享的类别，默认nil是所有分享
  @param title 分享标题
  @param url 分享链接
  @param contentText 分享文字
  @param imageArray 分享照片集合
  */
-+ (void)sharedWithTitle:(UIView *)view items:(NSArray*)items title:(NSString *)title url:(NSURL *)url contentText:(NSString *)contentText image:(NSArray *)imageArray completionBlock:(void (^)(AGShareStatus sharestatus, NSError *error))block;
++ (void)sharedWithView:(UIView *)view items:(NSArray*)items title:(NSString *)title url:(NSURL *)url contentText:(NSString *)contentText image:(NSArray *)imageArray completionBlock:(void (^)(AGShareStatus sharestatus, NSError *error))block;
 
 
 /**
@@ -95,4 +94,3 @@ typedef NS_ENUM(NSUInteger, AGShareStatus){
 + (NSString *)getAppIdWithPlatform:(SSDKPlatformType)platform;
 
 @end
-#endif

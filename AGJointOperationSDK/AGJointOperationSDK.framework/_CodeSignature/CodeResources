@@ -4,21 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		54zgwddlweWjx8qbxDaFhUN04w0=
-		</data>
 		<key>Headers/AGAnalysis.h</key>
 		<data>
 		xx4Yqlp4/A54fJEYlQjO6OqE0zg=
 		</data>
 		<key>Headers/AGConstants.h</key>
 		<data>
-		lcRPCkSS0I9Y5XydxfBgKxmlwdY=
+		Uv2IBM2BBqoSGA0NkIB5oZDaWjw=
 		</data>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<data>
-		6Cj5DkB2eufQ9T+N4nxIimlUNYA=
+		rJjnS76wBdjzHa6OVD88JPoCvl8=
 		</data>
 		<key>Headers/AGPurchase.h</key>
 		<data>
@@ -26,7 +22,7 @@
 		</data>
 		<key>Headers/AGUser+AGUI.h</key>
 		<data>
-		EibqCInfj15v1rIgkh+uQGlvenM=
+		gChDRHLdoohuRUuyvIvO61SNcsc=
 		</data>
 		<key>Headers/AGUser.h</key>
 		<data>
@@ -34,11 +30,11 @@
 		</data>
 		<key>Headers/AGVendorShare.h</key>
 		<data>
-		GDVmKqDsTL1DEKN4+NRQg/n2ye4=
+		i1VmUDWhZCPC4y5NF73MqCdyfOA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		v28XDAWIevnLLZcK+FEHc/J//CU=
+		UtA1cV76Dnvypk//KEXuQ2RdFTI=
 		</data>
 		<key>ShareSDK.bundle/Base.lproj/ShareSDK.strings</key>
 		<dict>
@@ -1076,22 +1072,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lcRPCkSS0I9Y5XydxfBgKxmlwdY=
+			Uv2IBM2BBqoSGA0NkIB5oZDaWjw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+2HSHudLzXqRWJqsP4tyisD8ahukbtqm3edSV/rkUVI=
+			HfUli3H+/MdoBjViQDN+8GPxu8lMbOCItP/AkA44ZeA=
 			</data>
 		</dict>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6Cj5DkB2eufQ9T+N4nxIimlUNYA=
+			rJjnS76wBdjzHa6OVD88JPoCvl8=
 			</data>
 			<key>hash2</key>
 			<data>
-			IVq+Ww6opnKIUAhffr47CAyLfkpD+ubFpurPID0JvAA=
+			TmLLfjhUGVBtVsIQOwVkly7s+PczUcv2EnxMJ8f5ja0=
 			</data>
 		</dict>
 		<key>Headers/AGPurchase.h</key>
@@ -1109,11 +1105,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EibqCInfj15v1rIgkh+uQGlvenM=
+			gChDRHLdoohuRUuyvIvO61SNcsc=
 			</data>
 			<key>hash2</key>
 			<data>
-			jGejSjgEeeTRxitrQQ/eqzCXMvprwKQ3UawyADaW3sk=
+			OxklP40/JZZmv62JjSZQ4ez3/2cV4ARTHvF/+xehua4=
 			</data>
 		</dict>
 		<key>Headers/AGUser.h</key>
@@ -1131,11 +1127,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GDVmKqDsTL1DEKN4+NRQg/n2ye4=
+			i1VmUDWhZCPC4y5NF73MqCdyfOA=
 			</data>
 			<key>hash2</key>
 			<data>
-			G61LZGpA7cSCMoD8x8XuM6Xy6EnzLRHspct32rhTPF8=
+			VeD6XjqA7vW4JghL2cJy/V0EoGUTgqS0+NfEYhFBbd8=
 			</data>
 		</dict>
 		<key>ShareSDK.bundle/Base.lproj/ShareSDK.strings</key>
@@ -3886,6 +3882,11 @@
 			<key>weight</key>
 			<real>1100</real>
 		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
 		<key>^version.plist$</key>
 		<true/>
 	</dict>
@@ -3930,6 +3931,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>

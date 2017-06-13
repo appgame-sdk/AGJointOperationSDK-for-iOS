@@ -34,4 +34,5 @@
 
 + (void)showIdentification:(BOOL)animated;
 
++ (void)showAuthentication:(BOOL)animated;
 @end
