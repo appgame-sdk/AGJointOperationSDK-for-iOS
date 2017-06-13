@@ -92,6 +92,19 @@ FOUNDATION_EXPORT const unsigned char AGJointOperationSDKVersionString[];
  */
 + (BOOL)isProductionMode;
 
+ /**
+ 是否打开第三方登录
+ */
++ (void)setPlatformLogin:(BOOL)isPlatformLogin;
+
++ (BOOL)isPlatformLogin;
+/**
+ 是否打开实名认证功能
+ */
++ (void)setOpenAuthentication:(NSString *)openAuthentication;
+
++ (NSString *)openAuthentication;
+
 /**
  设置SDK支持的屏幕方向。例如只支横屏可以设置UIInterfaceOrientationMaskLandscape。默认设置为UIInterfaceOrientationMaskAll。
  @param mask 支持的屏幕方向的掩码.
