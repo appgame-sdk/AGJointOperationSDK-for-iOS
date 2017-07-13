@@ -4,21 +4,41 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AlipaySDK.bundle/bar@2x.png</key>
+		<data>
+		ENmQmLXuSOxBy844XKkdTedcv2Y=
+		</data>
+		<key>AlipaySDK.bundle/refresh@2x.png</key>
+		<data>
+		MrXCB0ZUwnx4+zfw1X2jzlNdDc4=
+		</data>
+		<key>AlipaySDK.bundle/refresh_click@2x.png</key>
+		<data>
+		Q5O/60AWCbG5LfvVC3+guPjpeFs=
+		</data>
+		<key>AlipaySDK.bundle/shutdown@2x.png</key>
+		<data>
+		Z3Jf5aw1lVPaKemSw8qXPabBLcw=
+		</data>
+		<key>AlipaySDK.bundle/shutdown_click@2x.png</key>
+		<data>
+		v8pstv1HbmoW3gdlKZzSqn31WHY=
+		</data>
 		<key>Headers/AGAnalysis.h</key>
 		<data>
 		xx4Yqlp4/A54fJEYlQjO6OqE0zg=
 		</data>
 		<key>Headers/AGConstants.h</key>
 		<data>
-		Uv2IBM2BBqoSGA0NkIB5oZDaWjw=
+		weMFY+Oi9c9rn5QsxOVXAUhGxtU=
 		</data>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<data>
-		rJjnS76wBdjzHa6OVD88JPoCvl8=
+		8XBsf1M3XsZ8Xmm5svUSlhp20YU=
 		</data>
 		<key>Headers/AGPurchase.h</key>
 		<data>
-		0/1h3D9XxDIu9xQNoKh8kUXEfHQ=
+		1WzBVmhS379tPwHyWnCx8QYJiwQ=
 		</data>
 		<key>Headers/AGUser+AGUI.h</key>
 		<data>
@@ -34,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UtA1cV76Dnvypk//KEXuQ2RdFTI=
+		OQHqQYZnDBgXh8CMarVtjmNqIQ4=
 		</data>
 		<key>ShareSDK.bundle/Base.lproj/ShareSDK.strings</key>
 		<dict>
@@ -1057,6 +1077,61 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AlipaySDK.bundle/bar@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ENmQmLXuSOxBy844XKkdTedcv2Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			38AV6Lw9+K+g+t7MHjtEKIJarVILLcTXm0o58ki9C3Q=
+			</data>
+		</dict>
+		<key>AlipaySDK.bundle/refresh@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MrXCB0ZUwnx4+zfw1X2jzlNdDc4=
+			</data>
+			<key>hash2</key>
+			<data>
+			mR8Iqbh2To/+bYNWFk0IbpoorNfzg31HgUB8v89EphQ=
+			</data>
+		</dict>
+		<key>AlipaySDK.bundle/refresh_click@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q5O/60AWCbG5LfvVC3+guPjpeFs=
+			</data>
+			<key>hash2</key>
+			<data>
+			qkSv6KIv4z3l+TmK/G5Gms3oYZripYuLCK2rB2rmyhY=
+			</data>
+		</dict>
+		<key>AlipaySDK.bundle/shutdown@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z3Jf5aw1lVPaKemSw8qXPabBLcw=
+			</data>
+			<key>hash2</key>
+			<data>
+			mWjeqq55Ym3S0vhMp13qIXpvbIkaeheRy9CnDbpcqhQ=
+			</data>
+		</dict>
+		<key>AlipaySDK.bundle/shutdown_click@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v8pstv1HbmoW3gdlKZzSqn31WHY=
+			</data>
+			<key>hash2</key>
+			<data>
+			dE2ndHqk8MuNrgTt2yHONxfP38nq2HUgB4t2jKRl8SI=
+			</data>
+		</dict>
 		<key>Headers/AGAnalysis.h</key>
 		<dict>
 			<key>hash</key>
@@ -1072,33 +1147,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Uv2IBM2BBqoSGA0NkIB5oZDaWjw=
+			weMFY+Oi9c9rn5QsxOVXAUhGxtU=
 			</data>
 			<key>hash2</key>
 			<data>
-			HfUli3H+/MdoBjViQDN+8GPxu8lMbOCItP/AkA44ZeA=
+			TpZegy9aSy7cjqbSuRY54p+3iFcaGiJFnkQj1E9RABo=
 			</data>
 		</dict>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rJjnS76wBdjzHa6OVD88JPoCvl8=
+			8XBsf1M3XsZ8Xmm5svUSlhp20YU=
 			</data>
 			<key>hash2</key>
 			<data>
-			TmLLfjhUGVBtVsIQOwVkly7s+PczUcv2EnxMJ8f5ja0=
+			KpiCPgseL5+z6vj4v3KodUak1p9ADBELSqj75fXCZ2k=
 			</data>
 		</dict>
 		<key>Headers/AGPurchase.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0/1h3D9XxDIu9xQNoKh8kUXEfHQ=
+			1WzBVmhS379tPwHyWnCx8QYJiwQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vkkcEUdjnkhApLksvLqFlsiedp4zQf4u6EbY/6bWCMg=
+			ELBp/k6AUMXWbfyFm01jBzsHYaJpI0TdfYwkZoDfpcw=
 			</data>
 		</dict>
 		<key>Headers/AGUser+AGUI.h</key>
