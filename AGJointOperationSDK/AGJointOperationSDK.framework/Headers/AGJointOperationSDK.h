@@ -99,6 +99,13 @@ FOUNDATION_EXPORT const unsigned char AGJointOperationSDKVersionString[];
 
 + (BOOL)isPlatformLogin;
 /**
+ 是否打开第三方支付
+ */
++ (void)setThirdpartyPayment:(NSString *)thirdpartyPayment;
+
++ (NSString *)thirdpartyPayment;
+
+/**
  是否打开实名认证功能
  */
 + (void)setOpenAuthentication:(NSString *)openAuthentication;

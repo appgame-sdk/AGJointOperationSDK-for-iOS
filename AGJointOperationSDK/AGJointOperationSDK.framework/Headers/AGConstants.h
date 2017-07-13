@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define AGJOINTOPERATIONSDK_VERSION @"1.3.10"
+#define AGJOINTOPERATIONSDK_VERSION @"1.3.11"
 
 ///--------------------------------------
 #pragma mark - Notification

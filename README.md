@@ -110,7 +110,7 @@ pod update
 //配置clentId, seceret 和 热云 appKey
 [AGJointOperationSDK setClientId:@"你的client id" clientSecret:@"你的client secret" reYunAppKey:@"热云appKey"];
 
-//配置shareSDK
+//配置shareSDK，不集成第三方登陆和分享可不配置。
 [AGVendorShare registerAppWithShareAppId:@"shareAppId" WiboAppId:@"weiboAppId" andWeiboSecret:@"weiboSecret" weChatAppId:@"weChatId" andWeChatSecret:@"WeChatSecret" QQAppId:@"QQAppId" andQQSecret:@"QQSecret"];
 ```
 显示登录界面
@@ -136,18 +136,46 @@ pod update
 
 ```Objective-C
 // 购买
-[[AGPurchase sharedInstance] purchaseWithProductIdentifier:@"你的产品商品id" callBackUrl:@"你的回调地址" tradeId:@"你的订单号" privateInfo:@{@"你的参数":@""} success:^(SKPaymentTransaction *transaction) {
-	  NSLog(@"购买成功");
-} failure:^(NSError *error) {
-	  NSLog(@"购买失败");
-}];
+[[AGPurchase sharedInstance] purchaseWithProductIdentifier:@"你的产品商品id"
+                                                   callBackUrl:@"你的回调地址"
+                                                       tradeId:@"你的订单号"
+                                                   privateInfo:@{@"你的参数":@""}
+                                                       success:^(SKPaymentTransaction *transaction) {
+                                                       NSLog(@"购买成功");
+                                                       } failure:^(NSError *error) {
+                                                           NSLog(@"购买失败");
+                                                           NSLog(@"%@", error);
+                                                       }];
+
 ```
 
 分享到新浪微博，需要把链接加到分享内容里。如下所示，要分享的链接为 `http://www.baidu.com`
 
 ```Objective-C
-NSArray *imageArray = @[[UIImage imageNamed:@"testImage"]];
-[AGVendorShare sharedWithTitle:@"分享测试" url:[NSURL URLWithString:@"http://www.baidu.com"] contentText:@"分享内容http://www.baidu.com" image:imageArray];
+[AGVendorShare sharedWithView:self.view
+                             items:items
+                             title:@"分享测试"
+                               url:[NSURL URLWithString:@"http://www.baidu.com"]
+                       contentText:@"分享内容http://www.baidu.com"
+                             image:imageArray
+                   completionBlock:^(AGShareStatus sharestatus, NSError *error) {
+                       
+                       UIAlertView *alerView = [[UIAlertView alloc]initWithTitle:@"" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                       switch (sharestatus) {
+                           case AGShareStateSuccess:
+                               [alerView setTitle:@"分享成功"];
+                               [alerView show];
+                               break;
+                           case AGShareStateFail:
+                               [alerView setTitle:@"分享失败"];
+                               [alerView show];
+                           case AGShareStateCancel:
+                               [alerView setTitle:@"分享取消"];
+                               [alerView show];
+                           default:
+                               break;
+                       }
+                   }];
 ```
 
 数据统计分析
@@ -251,11 +279,13 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 1.3.11
+    - 修复已知BUG
 - 1.3.10
-    -优化分享功能
-    -增强SDK稳定性
+    - 优化分享功能
+    - 增强SDK稳定性
 - 1.3.9
-    -新增实名认证功能
+    - 新增实名认证功能
 - 1.3.5
     - 优化第三方登录
     - 优化分享功能
