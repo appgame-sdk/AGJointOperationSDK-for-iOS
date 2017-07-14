@@ -152,6 +152,13 @@ pod update
 分享到新浪微博，需要把链接加到分享内容里。如下所示，要分享的链接为 `http://www.baidu.com`
 
 ```Objective-C
+
+NSArray *items = @[
+                       @(SSDKPlatformTypeQQ),       //包含QQ，Qzone
+                       @(SSDKPlatformTypeWechat),   //包含微信好友，朋友圈
+                       @(SSDKPlatformTypeSinaWeibo) //微博
+                       ];
+                       
 [AGVendorShare sharedWithView:self.view
                              items:items
                              title:@"分享测试"
