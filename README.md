@@ -185,7 +185,7 @@ NSArray *items = @[
                    }];
 ```
 
-数据统计分析
+#### 数据统计分析 
 
 * 开启数据统计的 debug 模式
 
@@ -197,14 +197,108 @@ NSArray *items = @[
 * 调用
 
 ```Objective-C
-// 在需要采集数据的地方调用对应的接口来采集和上传数据，例如：角色注册事件(在角色注册成功后调用)
+//数据统计初始化(在应用启动初始化时调用，调用前必须配置好 clientId 和 clientSecret) 必接
+[AGAnalysis sendLaunchEventWithExtraData:nil completionBlock:^(NSError *error) {
+        if (error) {
+            NSLog(@"%@",error);
+        }
+    }];
+
+```
+* 调用以下接口前需要先设置RoleID & GameServerId；
+* [AGJointOperationSDK setRoleId:@"**"];
+* [AGJointOperationSDK setGameServerId:@"**"];
+* 接口详情请查看AGAnalysis.h
+*  在需要采集数据的地方调用对应的接口来采集和上传数据，例如：
+
+```Objective-C
+//创建角色事件(在角色注册成功后调用)  没有角色系统请忽略
 [AGAnalysis sendRoleRegisterEventWithExtraData:nil completionBlock:^(NSError *error) {
     if (error) {
         NSLog(@"%@", error);
     }
 }];
 ```
-
+```Objective-C
+//角色登录事件(在角色登录成功后调用)  必接
+[AGAnalysis sendRoleLoginEventWithExtraData:nil completionBlock:^(NSError *error) {
+        if (error) {
+            NSLog(@"%@",error);
+        }
+    }];
+```
+```Objective-C
+//角色升级事件(在角色升级成功后调用)  必接
+[AGAnalysis sendRoleLevelupEventWithUlevel:@"12" extraData:nil completionBlock:^(NSError *error) {
+        if (error) {
+            NSLog(@"%@",error);
+        }
+    }];
+```
+```Objective-C
+//角色退出事件(在角色退出成功后调用)  必接
+[AGAnalysis sendRoleLogoutEventWithExtraData:nil completionBlock:^(NSError *error) {
+        if (error) {
+            NSLog(@"%@",error);
+        }
+    }];
+```
+```Objective-C
+上传角色标签设置事件(为角色分析提供更多的维度)
+[AGAnalysis sendRoleMarkEventWithAction:nil tag1:@"tag1" tag2:@"tag2" extraData:nil completionBlock:^(NSError *error) {
+        if (error) {
+            NSLog(@"%@",error);
+        }
+    }];
+```
+```Objective-C
+发送虚拟货币事件
+[AGAnalysis sendVirtualCoinEventWithAction:nil reason:@"购买道具" point:@"1001" coinType:@"人民币" coinCount:@"1001" coinBalance:@"200" extraData:nil completionBlock:^(NSError *error) {
+        if (error) {
+            NSLog(@"%@",error);
+        }
+    }];
+```
+```Objective-C
+发送道具事件
+[AGAnalysis sendItemEventWithWithAction:nil reason:@"战斗获得" point:@"1001" itemType:@"攻击道具" itemID:@"1001" itemCount:@"200" itemBalance:@"300" extraData:nil completionBlock:^(NSError *error){
+        if (error) {
+            NSLog(@"%@",error);
+        }
+    }];
+```
+```Objective-C
+发送副本事件
+[AGAnalysis sendDungeonEventWithDungeonType:@"普通" dungeonID:@"10001" isAuto:YES isMaiden:YES isSweep:NO result:@"0" reason:@"太菜了" duration:@"20" extraData:nil completionBlock:^(NSError *error){
+        if (error) {
+            NSLog(@"%@",error);
+        }
+    }];
+```
+```Objective-C
+ 发送任务事件
+ [AGAnalysis sendTaskEventWithTaskType:@"活动" taskID:@"1001" action:@"1" reason:@"中途退出" duration:@"100" extraData:nil completionBlock:^(NSError *error) {
+        if (error) {
+            NSLog(@"%@",error);
+        }
+    }];
+```
+```Objective-C
+发送自定义事件（帮助统计某些CP希望统计的事件类型）
+[AGAnalysis sendCustomEventWithEventType:@"自定义" eventID:@"custom01" action:@"1" duration:@"100" extraData:nil completionBlock:^(NSError *error){
+        if (error) {
+            NSLog(@"%@",error);
+        }
+    }];
+```
+```Objective-C
+ 发送错误报告（帮助定位游戏错误）
+ [AGAnalysis sendReportEventWithSummary:@"错误描述" message:@"错误内容" completionBlock:^(NSError *error){
+        if (error) {
+            NSLog(@"%@",error);
+        }
+    }];
+```
 * debug模式下查看统计结果
 
 	- 浏览器中打开: http://106.75.18.10/chat.html?channel=appkey
