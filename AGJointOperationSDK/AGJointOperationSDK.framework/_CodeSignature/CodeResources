@@ -4,37 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>AlipaySDK.bundle/bar@2x.png</key>
+		<key>AGJointOperationSDK</key>
 		<data>
-		ENmQmLXuSOxBy844XKkdTedcv2Y=
-		</data>
-		<key>AlipaySDK.bundle/refresh@2x.png</key>
-		<data>
-		MrXCB0ZUwnx4+zfw1X2jzlNdDc4=
-		</data>
-		<key>AlipaySDK.bundle/refresh_click@2x.png</key>
-		<data>
-		Q5O/60AWCbG5LfvVC3+guPjpeFs=
-		</data>
-		<key>AlipaySDK.bundle/shutdown@2x.png</key>
-		<data>
-		Z3Jf5aw1lVPaKemSw8qXPabBLcw=
-		</data>
-		<key>AlipaySDK.bundle/shutdown_click@2x.png</key>
-		<data>
-		v8pstv1HbmoW3gdlKZzSqn31WHY=
-		</data>
-		<key>Headers/AGAnalysis.h</key>
-		<data>
-		xx4Yqlp4/A54fJEYlQjO6OqE0zg=
+		34Ptex8jlflb8oYzeHr5iHCAEx8=
 		</data>
 		<key>Headers/AGConstants.h</key>
 		<data>
-		weMFY+Oi9c9rn5QsxOVXAUhGxtU=
+		K+SmPg9hb0E7UG7kVNEMTRXYlE8=
 		</data>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<data>
-		8XBsf1M3XsZ8Xmm5svUSlhp20YU=
+		/FlAAEm4V0j/QzH5Zj3Z4+R7uKA=
 		</data>
 		<key>Headers/AGPurchase.h</key>
 		<data>
@@ -42,19 +22,15 @@
 		</data>
 		<key>Headers/AGUser+AGUI.h</key>
 		<data>
-		gChDRHLdoohuRUuyvIvO61SNcsc=
+		EibqCInfj15v1rIgkh+uQGlvenM=
 		</data>
 		<key>Headers/AGUser.h</key>
 		<data>
-		GstexQ2gT0R04YXRF+7tqi9N894=
+		lhqkV2v0f/SRU+Ue8ljAHm0l1ZI=
 		</data>
 		<key>Headers/AGVendorShare.h</key>
 		<data>
 		i1VmUDWhZCPC4y5NF73MqCdyfOA=
-		</data>
-		<key>Info.plist</key>
-		<data>
-		OQHqQYZnDBgXh8CMarVtjmNqIQ4=
 		</data>
 		<key>ShareSDK.bundle/Base.lproj/ShareSDK.strings</key>
 		<dict>
@@ -1077,92 +1053,37 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>AlipaySDK.bundle/bar@2x.png</key>
+		<key>AGJointOperationSDK</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ENmQmLXuSOxBy844XKkdTedcv2Y=
+			34Ptex8jlflb8oYzeHr5iHCAEx8=
 			</data>
 			<key>hash2</key>
 			<data>
-			38AV6Lw9+K+g+t7MHjtEKIJarVILLcTXm0o58ki9C3Q=
-			</data>
-		</dict>
-		<key>AlipaySDK.bundle/refresh@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MrXCB0ZUwnx4+zfw1X2jzlNdDc4=
-			</data>
-			<key>hash2</key>
-			<data>
-			mR8Iqbh2To/+bYNWFk0IbpoorNfzg31HgUB8v89EphQ=
-			</data>
-		</dict>
-		<key>AlipaySDK.bundle/refresh_click@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Q5O/60AWCbG5LfvVC3+guPjpeFs=
-			</data>
-			<key>hash2</key>
-			<data>
-			qkSv6KIv4z3l+TmK/G5Gms3oYZripYuLCK2rB2rmyhY=
-			</data>
-		</dict>
-		<key>AlipaySDK.bundle/shutdown@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Z3Jf5aw1lVPaKemSw8qXPabBLcw=
-			</data>
-			<key>hash2</key>
-			<data>
-			mWjeqq55Ym3S0vhMp13qIXpvbIkaeheRy9CnDbpcqhQ=
-			</data>
-		</dict>
-		<key>AlipaySDK.bundle/shutdown_click@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			v8pstv1HbmoW3gdlKZzSqn31WHY=
-			</data>
-			<key>hash2</key>
-			<data>
-			dE2ndHqk8MuNrgTt2yHONxfP38nq2HUgB4t2jKRl8SI=
-			</data>
-		</dict>
-		<key>Headers/AGAnalysis.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xx4Yqlp4/A54fJEYlQjO6OqE0zg=
-			</data>
-			<key>hash2</key>
-			<data>
-			+s6iN57uwnBdGGtll88kzhypMADmYtwUsVqc+uHAGHs=
+			CtxWDSbd9tjRZHXPJiN6DQrJFw2oKF5qzCs2PzaiauA=
 			</data>
 		</dict>
 		<key>Headers/AGConstants.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			weMFY+Oi9c9rn5QsxOVXAUhGxtU=
+			K+SmPg9hb0E7UG7kVNEMTRXYlE8=
 			</data>
 			<key>hash2</key>
 			<data>
-			TpZegy9aSy7cjqbSuRY54p+3iFcaGiJFnkQj1E9RABo=
+			Yqzw++i0g1Tzpv5Fvn1KEpOHHbceMa19+SeuUNHQfB0=
 			</data>
 		</dict>
 		<key>Headers/AGJointOperationSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8XBsf1M3XsZ8Xmm5svUSlhp20YU=
+			/FlAAEm4V0j/QzH5Zj3Z4+R7uKA=
 			</data>
 			<key>hash2</key>
 			<data>
-			KpiCPgseL5+z6vj4v3KodUak1p9ADBELSqj75fXCZ2k=
+			w5+bO//FJr6OF6yVFUfFrjdwRoe9c/SBqjhShYcPdMU=
 			</data>
 		</dict>
 		<key>Headers/AGPurchase.h</key>
@@ -1180,22 +1101,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gChDRHLdoohuRUuyvIvO61SNcsc=
+			EibqCInfj15v1rIgkh+uQGlvenM=
 			</data>
 			<key>hash2</key>
 			<data>
-			OxklP40/JZZmv62JjSZQ4ez3/2cV4ARTHvF/+xehua4=
+			jGejSjgEeeTRxitrQQ/eqzCXMvprwKQ3UawyADaW3sk=
 			</data>
 		</dict>
 		<key>Headers/AGUser.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GstexQ2gT0R04YXRF+7tqi9N894=
+			lhqkV2v0f/SRU+Ue8ljAHm0l1ZI=
 			</data>
 			<key>hash2</key>
 			<data>
-			2QLPv3btndB6f2UIn22V8hQ97FNADNFiei6HaBGjmUE=
+			2cYzQLQ28Ah+sSao6qe7ak40wv76rvXlMK+X8+jdRow=
 			</data>
 		</dict>
 		<key>Headers/AGVendorShare.h</key>

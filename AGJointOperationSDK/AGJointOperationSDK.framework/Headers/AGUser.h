@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <AGJointOperationSDK/AGConstants.h>
+
 @class AGUser;
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^BindFaceBookCompletion)(AGUser *user, NSError *error);
@@ -74,6 +76,8 @@ typedef void (^BindFaceBookCompletion)(AGUser *user, NSError *error);
 ///是否实名认证
 @property (nonatomic, assign, readonly) BOOL identification;
 
+
+
 /**
  获得当前登录的用户，可能为nil。
  */
@@ -83,6 +87,9 @@ typedef void (^BindFaceBookCompletion)(AGUser *user, NSError *error);
  */
 + (void)logOutWithCompletionBlock:(void (^)(BOOL success, NSError *error))block;
 
+#pragma mark 展示/隐藏悬浮窗
+- (void)displayFloatView;
+- (void)hiddenFloatView;
 
 @end
 

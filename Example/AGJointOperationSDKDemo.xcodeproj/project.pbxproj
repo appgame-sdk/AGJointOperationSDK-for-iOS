@@ -348,6 +348,11 @@
 				INFOPLIST_FILE = AGJointOperationSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/PlatformSDK/SinaWeiboSDK\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/PlatformSDK/WeChatSDK\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.inone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "23cdba41-3a12-4aea-a30a-8c63a5f87511";
@@ -367,6 +372,11 @@
 				INFOPLIST_FILE = AGJointOperationSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/PlatformSDK/SinaWeiboSDK\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/PlatformSDK/WeChatSDK\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.inone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
