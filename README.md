@@ -16,19 +16,19 @@
 ## 功能特性
 
 - [x] 支持任玩堂账号中心
-	- [x] 支持手机号码和玩+号注册和登录
-	- [x] 支持QQ、微信、微博登录和分享
-	- [x] 支持手机绑定
-	- [x] 支持手机号重置密码
-	- [x] 支持游客登录
+  - [x] 支持手机号码和玩+号注册和登录
+  - [x] 支持QQ、微信、微博登录和分享
+  - [x] 支持手机绑定
+  - [x] 支持手机号重置密码
+  - [x] 支持游客登录
 - [x] 支持苹果内购
-	- [x] 封装StoreKit内购过程，方便用户一个函数搞定内购
-	- [x] 内置本地收据验证和服务端收据验证 
+  - [x] 封装StoreKit内购过程，方便用户一个函数搞定内购
+  - [x] 内置本地收据验证和服务端收据验证 
 - [x] 支持数据统计分析
 - [x] 网络及接口
-	- [x] 支持IPv6。苹果明文规定，2016年6月1日开始所有提交到App Store的应用必须支持IPv6-only网络，为确保项目能正常通过审核，请在项目中增加相关配置来适应App Store的新策略。
-	- [x] 支持https访问。SDK中所有接口在正式环境下使用`https`接口，测试环境下使用`http`接口提交数据。
-	
+  - [x] 支持IPv6。苹果明文规定，2016年6月1日开始所有提交到App Store的应用必须支持IPv6-only网络，为确保项目能正常通过审核，请在项目中增加相关配置来适应App Store的新策略。
+  - [x] 支持https访问。SDK中所有接口在正式环境下使用`https`接口，测试环境下使用`http`接口提交数据。
+  
 ## 不支持功能
 
 - [x] 暂时不支持Bitcode功能。苹果的Bitcode还略有问题，如有需要后续可以支持Bitcode。
@@ -70,28 +70,31 @@ pod update
 >注：1.2.0 版本加入了第三方登录，如选择手动安装，需要在您的项目中手动配置shareSDK。建议使用pod安装 `AGJointOperationSDK`。
 
 1. 下载整个项目，将`AGJointOperationSDK.framework` 和 `AGJointOperationSDKResource.bundle`拖到您的工程内
-	> 两个文件需在同一目录下
-	
-	![](http://o9xc0bh9t.bkt.clouddn.com/QQ20161215-114953.png)
+  > 两个文件需在同一目录下
+  
+  ![](http://o9xc0bh9t.bkt.clouddn.com/QQ20161215-114953.png)
 2. 添加系统库`MobileCoreServices.framework`，`SystemConfiguration.framework`，`AdSupport.framework`，`UIKit.framework`，`libsqlite3.tbd`。
 
-	![](http://o9xc0bh9t.bkt.clouddn.com/14828273371003.jpg)
+  ![](http://o9xc0bh9t.bkt.clouddn.com/14828273371003.jpg)
 3. 配置工程。
-	- 添加`-ObjC`标志到Other Linker Flags。
-	
-	  ![](http://o9xc0bh9t.bkt.clouddn.com/14817743000443.jpg)
-	  
-	- 设置 `Enable Bitcode` 为 `No`
-		
-	  ![](http://o9xc0bh9t.bkt.clouddn.com/14817744325203.jpg)
-	  
-	- 配置QQ、微信、微博
-	  ![](http://o9xc0bh9t.bkt.clouddn.com/14876729585276.jpg)
-	  
-	- `info.plist` 添加白名单
-	
-	  ![](http://o9xc0bh9t.bkt.clouddn.com/14876732573247.jpg)
-	  
+  - 添加`-ObjC`标志到Other Linker Flags。
+  
+    ![](http://o9xc0bh9t.bkt.clouddn.com/14817743000443.jpg)
+    
+  - 设置 `Enable Bitcode` 为 `No`
+    
+    ![](http://o9xc0bh9t.bkt.clouddn.com/14817744325203.jpg)
+    
+  - 配置QQ、微信、微博 
+      - 任玩堂SDK的URL Schemes为AG+ClientId
+      例：AG5t8Nyqs99dqs3n9v51
+      - 第三方信息根据需求配置 
+    ![](http://o9xc0bh9t.bkt.clouddn.com/14876729585276.jpg)
+    
+  - `info.plist` 添加白名单
+  
+    ![](http://o9xc0bh9t.bkt.clouddn.com/14876732573247.jpg)
+    
 
 ### 示例代码
 
@@ -112,6 +115,12 @@ pod update
 
 //配置shareSDK，不集成第三方登陆和分享可不配置。
 [AGVendorShare registerAppWithShareAppId:@"shareAppId" WiboAppId:@"weiboAppId" andWeiboSecret:@"weiboSecret" weChatAppId:@"weChatId" andWeChatSecret:@"WeChatSecret" QQAppId:@"QQAppId" andQQSecret:@"QQSecret"];
+
+//设置游戏屏幕方向
+//竖屏游戏
+[AGJointOperationSDK setSupportedInterfaceOrientations:UIInterfaceOrientationMaskPortrait];
+//横屏游戏
+[AGJointOperationSDK setSupportedInterfaceOrientations:UIInterfaceOrientationMaskLandscape];
 ```
 显示登录界面
 
@@ -140,6 +149,8 @@ pod update
                                                    callBackUrl:@"你的回调地址"
                                                        tradeId:@"你的订单号"
                                                    privateInfo:@{@"你的参数":@""}
+                                                        amount:amount
+                                                viewController:self
                                                        success:^(SKPaymentTransaction *transaction) {
                                                        NSLog(@"购买成功");
                                                        } failure:^(NSError *error) {
@@ -184,130 +195,7 @@ NSArray *items = @[
                        }
                    }];
 ```
-
-#### 数据统计分析 
-
-* 开启数据统计的 debug 模式
-
-```Objective-C
-// 开启debug模式下，您可以实时观察数据变化
-// 默认为关闭状态
-[AGAnalysis setDebugMode:YES];
-```
-* 调用
-
-```Objective-C
-//数据统计初始化(在应用启动初始化时调用，调用前必须配置好 clientId 和 clientSecret) 必接
-[AGAnalysis sendLaunchEventWithExtraData:nil completionBlock:^(NSError *error) {
-        if (error) {
-            NSLog(@"%@",error);
-        }
-    }];
-
-```
-* 调用以下接口前需要先设置RoleID & GameServerId；
-* [AGJointOperationSDK setRoleId:@"**"];
-* [AGJointOperationSDK setGameServerId:@"**"];
-* 接口详情请查看AGAnalysis.h
-*  在需要采集数据的地方调用对应的接口来采集和上传数据，例如：
-
-```Objective-C
-//创建角色事件(在角色注册成功后调用)  没有角色系统请忽略
-[AGAnalysis sendRoleRegisterEventWithExtraData:nil completionBlock:^(NSError *error) {
-    if (error) {
-        NSLog(@"%@", error);
-    }
-}];
-```
-```Objective-C
-//角色登录事件(在角色登录成功后调用)  必接
-[AGAnalysis sendRoleLoginEventWithExtraData:nil completionBlock:^(NSError *error) {
-        if (error) {
-            NSLog(@"%@",error);
-        }
-    }];
-```
-```Objective-C
-//角色升级事件(在角色升级成功后调用)  必接
-[AGAnalysis sendRoleLevelupEventWithUlevel:@"12" extraData:nil completionBlock:^(NSError *error) {
-        if (error) {
-            NSLog(@"%@",error);
-        }
-    }];
-```
-```Objective-C
-//角色退出事件(在角色退出成功后调用)  必接
-[AGAnalysis sendRoleLogoutEventWithExtraData:nil completionBlock:^(NSError *error) {
-        if (error) {
-            NSLog(@"%@",error);
-        }
-    }];
-```
-```Objective-C
-上传角色标签设置事件(为角色分析提供更多的维度)
-[AGAnalysis sendRoleMarkEventWithAction:nil tag1:@"tag1" tag2:@"tag2" extraData:nil completionBlock:^(NSError *error) {
-        if (error) {
-            NSLog(@"%@",error);
-        }
-    }];
-```
-```Objective-C
-发送虚拟货币事件
-[AGAnalysis sendVirtualCoinEventWithAction:nil reason:@"购买道具" point:@"1001" coinType:@"人民币" coinCount:@"1001" coinBalance:@"200" extraData:nil completionBlock:^(NSError *error) {
-        if (error) {
-            NSLog(@"%@",error);
-        }
-    }];
-```
-```Objective-C
-发送道具事件
-[AGAnalysis sendItemEventWithWithAction:nil reason:@"战斗获得" point:@"1001" itemType:@"攻击道具" itemID:@"1001" itemCount:@"200" itemBalance:@"300" extraData:nil completionBlock:^(NSError *error){
-        if (error) {
-            NSLog(@"%@",error);
-        }
-    }];
-```
-```Objective-C
-发送副本事件
-[AGAnalysis sendDungeonEventWithDungeonType:@"普通" dungeonID:@"10001" isAuto:YES isMaiden:YES isSweep:NO result:@"0" reason:@"太菜了" duration:@"20" extraData:nil completionBlock:^(NSError *error){
-        if (error) {
-            NSLog(@"%@",error);
-        }
-    }];
-```
-```Objective-C
- 发送任务事件
- [AGAnalysis sendTaskEventWithTaskType:@"活动" taskID:@"1001" action:@"1" reason:@"中途退出" duration:@"100" extraData:nil completionBlock:^(NSError *error) {
-        if (error) {
-            NSLog(@"%@",error);
-        }
-    }];
-```
-```Objective-C
-发送自定义事件（帮助统计某些CP希望统计的事件类型）
-[AGAnalysis sendCustomEventWithEventType:@"自定义" eventID:@"custom01" action:@"1" duration:@"100" extraData:nil completionBlock:^(NSError *error){
-        if (error) {
-            NSLog(@"%@",error);
-        }
-    }];
-```
-```Objective-C
- 发送错误报告（帮助定位游戏错误）
- [AGAnalysis sendReportEventWithSummary:@"错误描述" message:@"错误内容" completionBlock:^(NSError *error){
-        if (error) {
-            NSLog(@"%@",error);
-        }
-    }];
-```
-* debug模式下查看统计结果
-
-	- 浏览器中打开: http://106.75.18.10/chat.html?channel=appkey
-	- appkey的位置填写游戏对应的clientID
-	- 错误提示
-		- 字段【xxx】内容无效: 表示参数 `xxx` 的格式不正确
-		- 校验失败: 签名错误
-		- unknow appkey - xxx：表示  `clientID` 无效
-	
+  
 ###回调地址说明
 
 用户完成支付之后，SDK服务器会给开发商服务器发起POST回调，通知订单处理结果。开发商需要在内购的时候传入回调地址。
@@ -380,6 +268,9 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 2.0.1
+    - 更新UI界面
+    - 移除数据统计分析接口
 - 1.3.11
     - 修复已知BUG
 - 1.3.10
@@ -393,44 +284,44 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 - 1.3.3
     - 修复第三方登录多次授权问题
 - 1.3.2
-	- 修复游戏内切换账号不能通知游戏的bug。
+  - 修复游戏内切换账号不能通知游戏的bug。
 - 1.3.1
-	- 增加了用户中心接口，可以选择接入。
-	- 修改了分享接口，增加了 URL 参数。
-	- 修改了游客登录的文案。
+  - 增加了用户中心接口，可以选择接入。
+  - 修改了分享接口，增加了 URL 参数。
+  - 修改了游客登录的文案。
 - 1.2.1 
-	- 加入第三方分享。
+  - 加入第三方分享。
 - 1.2.0
-	- 加入第三方登录。
-	- 修复若干bug。
+  - 加入第三方登录。
+  - 修复若干bug。
 - 1.1.4
-	- 优化内购流程。 
+  - 优化内购流程。 
 - 1.1.3
-	- 修复若干bug。
+  - 修复若干bug。
 - 1.1.2
-	- 修复重复记录账号的bug。
+  - 修复重复记录账号的bug。
 - 1.1.1
-	- 全面支持https接口。
-	- 规范一些接口的命名。
-	- 修复若干bug。
+  - 全面支持https接口。
+  - 规范一些接口的命名。
+  - 修复若干bug。
 - 1.1.0
-	- 加入热云统计
-	- 修复若干bug。
+  - 加入热云统计
+  - 修复若干bug。
 - 1.0.16
-	- 优化统计接口。
-	- 修复若干bug。
+  - 优化统计接口。
+  - 修复若干bug。
 - 1.0.15
-	- 界面改版，替换为弹框形式。
-	- 增加统计分析功能。
-	- 修复若干bug。
+  - 界面改版，替换为弹框形式。
+  - 增加统计分析功能。
+  - 修复若干bug。
 - 1.0.14
-	- 修复一个可能丢单的问题。 
+  - 修复一个可能丢单的问题。 
 - 1.0.13
-	- 修改服务器地址。
-	- game server id为必选参数。
-	- 增加可选的游戏角色id
+  - 修改服务器地址。
+  - game server id为必选参数。
+  - 增加可选的游戏角色id
 - 1.0.12
-	- 增加transaction id的校验。 
+  - 增加transaction id的校验。 
 - 1.0.11
     - 修复账号若干bugs。
 - 1.0.10
@@ -445,18 +336,18 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
     - 增加屏幕支持方向设置。例如`[AGJointOperationSDK setSupportedInterfaceOrientations:UIInterfaceOrientationMaskLandscape]`。
     - 修复若干bug.
 - 1.0.5
-	- 内购接口增加privateInfo参数。CP可以传入任意参数，这些信息会在服务接收回调的时候被带上。
+  - 内购接口增加privateInfo参数。CP可以传入任意参数，这些信息会在服务接收回调的时候被带上。
 - 1.0.4
-	- 增加登录发送通知功能。通过接收通知可获得登录状态及相关信息。通知消息定义在`AGConstants.h`里面。
+  - 增加登录发送通知功能。通过接收通知可获得登录状态及相关信息。通知消息定义在`AGConstants.h`里面。
 - 1.0.3
-	- 增加滑动列表收起键盘功能。
+  - 增加滑动列表收起键盘功能。
 - 1.0.2
-	- 增加IDFA跟踪。因此提交商店版本的时候请选择对应的广告用途。
+  - 增加IDFA跟踪。因此提交商店版本的时候请选择对应的广告用途。
 - 1.0.1
-	- 修复一些小缺陷
+  - 修复一些小缺陷
 - 1.0.0
-	- 接入任玩堂账号中心
-	- 封装StoreKit
+  - 接入任玩堂账号中心
+  - 封装StoreKit
 
 
 

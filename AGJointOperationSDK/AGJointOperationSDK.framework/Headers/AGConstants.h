@@ -17,6 +17,8 @@
 extern NSString *const _Nonnull AGLoginNotification;
 /// 登出消息。登出失败或者成功都会发送消息。
 extern NSString *const _Nonnull AGLogOutNotification;
+
+
 ///--------------------------------------
 
 ///--------------------------------------

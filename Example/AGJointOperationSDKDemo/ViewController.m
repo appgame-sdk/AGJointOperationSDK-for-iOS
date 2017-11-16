@@ -65,6 +65,8 @@
                                                    callBackUrl:@"http://www.baidu.com"
                                                        tradeId:[[NSDate date] description]
                                                    privateInfo:@{@"haha shenme gui":@"xxxxxxx"}
+                                                        amount:0.02
+                                                viewController:self
                                                        success:^(SKPaymentTransaction *transaction) {
                                                            [hud hideAnimated:YES];
                                                            NSLog(@"购买成功");
@@ -74,6 +76,7 @@
                                                            NSLog(@"%@", error);
                                                        }];
 }
+
 - (IBAction)showNonConsumableBuy:(id)sender {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [[AGPurchase sharedInstance] purchaseWithProductIdentifier:@"com.sydl.zs18"
@@ -106,9 +109,7 @@
                        @(SSDKPlatformTypeWechat),
                        @(SSDKPlatformTypeSinaWeibo)
                        ];
-    
-//    [self.view addSubview:view];
-    
+
     [AGVendorShare sharedWithView:self.view
                              items:items
                              title:@"分享测试"

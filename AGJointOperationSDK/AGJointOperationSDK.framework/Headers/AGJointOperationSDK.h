@@ -19,7 +19,6 @@ FOUNDATION_EXPORT const unsigned char AGJointOperationSDKVersionString[];
 #import <AGJointOperationSDK/AGUser+AGUI.h>
 #import <AGJointOperationSDK/AGConstants.h>
 #import <AGJointOperationSDK/AGPurchase.h>
-#import <AGJointOperationSDK/AGAnalysis.h>
 //#import <AGJointOperationSDK/AGVendorShare.h>
 
 /**
@@ -32,15 +31,7 @@ FOUNDATION_EXPORT const unsigned char AGJointOperationSDKVersionString[];
  @param clientId 客户端id
  @param clientSecret 客户端secret
  */
-+ (void)setClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret __attribute__((deprecated("使用 setClientId:clientSecret:reYunAppKey: 代替")));
-
-/**
- 设置SDK的ClientId和ClientSecret。这两个值向任玩堂申请获得。
- @param clientId 客户端id
- @param clientSecret 客户端secret
- @param appKey  热云后台appKey(请向运营咨询)
- */
-+ (void)setClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret reYunAppKey:(NSString *)appKey;
++ (void)setClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret;
 
 /**
  设置CP服务器id
@@ -75,11 +66,6 @@ FOUNDATION_EXPORT const unsigned char AGJointOperationSDKVersionString[];
  获得游戏角色id.
  */
 + (NSString *)getRoleId;
-
-/**
- 获得热云appKey
- */
-+ (NSString *)getReYunAppKey;
 
 /**
  设置正式环境，还是测试环境。
@@ -118,4 +104,6 @@ FOUNDATION_EXPORT const unsigned char AGJointOperationSDKVersionString[];
  */
 + (void)setSupportedInterfaceOrientations:(UIInterfaceOrientationMask)mask;
 + (UIInterfaceOrientationMask)supportedInterfaceOrientations;
+
++ (BOOL)isLandscape;
 @end

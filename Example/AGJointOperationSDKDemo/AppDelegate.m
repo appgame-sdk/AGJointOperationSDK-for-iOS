@@ -25,23 +25,17 @@
     
     [AGJointOperationSDK setProductionMode:NO];
     
-    [AGJointOperationSDK setSupportedInterfaceOrientations:UIInterfaceOrientationMaskPortrait];
-    
-    //    [AGJointOperationSDK setClientId:@"B962NAbX3JmEth8b" clientSecret:@"d0ce2fc90d85cec0e9f58a197e8cd517" reYunAppKey:@"bce5e859fd23a8eeb3e5135d18f65f05"];
-    [AGJointOperationSDK setClientId:@"mbzj" clientSecret:@"test.mbzj" reYunAppKey:@"d0ce2fc90d85cec0e9f58a197e8cd517"];
+    [AGJointOperationSDK setClientId:@"tmcs" clientSecret:@"test.tmcs"];
     
     [AGVendorShare registerAppWithShareAppId:@"1a517044eb216" WiboAppId:@"811779025" andWeiboSecret:@"39ac9e1c06feccbae33b84ee920e4f07" weChatAppId:@"wx009fbcef29b998a9" andWeChatSecret:@"5c09b14b702e430cc7438ed8f7e81c6c" QQAppId:@"1105898464" andQQSecret:@"kGP25e1oyo5sDxaU"];
     
-    [AGJointOperationSDK setRoleId:@"fdsaf"];
-    [AGAnalysis setDebugMode:NO];
-    [AGAnalysis sendLaunchEventWithExtraData:nil completionBlock:^(NSError *error){
-        if (error) {
-            NSLog(@"%@", error);
-        }
-    }];
+    //竖屏游戏
+//    [AGJointOperationSDK setSupportedInterfaceOrientations:UIInterfaceOrientationMaskPortrait];
+    //横屏游戏
+    [AGJointOperationSDK setSupportedInterfaceOrientations:UIInterfaceOrientationMaskLandscape];
     
-    NSString *serverID = @"aaaa";
-    [AGJointOperationSDK setGameServerId:serverID];
+    [AGJointOperationSDK setRoleId:@"fdsaf"];
+    [AGJointOperationSDK setGameServerId:@"aaaa"];
     return YES;
 }
 
