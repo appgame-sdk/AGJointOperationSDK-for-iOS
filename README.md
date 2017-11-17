@@ -69,11 +69,21 @@ pod update
 ### 手动添加
 >注：1.2.0 版本加入了第三方登录，如选择手动安装，需要在您的项目中手动配置shareSDK。建议使用pod安装 `AGJointOperationSDK`。
 
-1. 下载整个项目，将`AGJointOperationSDK.framework` 和 `AGJointOperationSDKResource.bundle`拖到您的工程内
-  > 两个文件需在同一目录下
-  
-  ![](http://o9xc0bh9t.bkt.clouddn.com/QQ20161215-114953.png)
-2. 添加系统库`MobileCoreServices.framework`，`SystemConfiguration.framework`，`AdSupport.framework`，`UIKit.framework`，`libsqlite3.tbd`。
+1. 下载整个项目，将frameworks文件夹里的3个文件夹添加到您的项目中。
+    - AGJointOperationSDK
+    - MOBFoundation
+    - ShareSDK3
+
+2. 添加系统库
+`MobileCoreServices.framework`
+`SystemConfiguration.framework`
+`AdSupport.framework`
+`UIKit.framework`
+`libsqlite3.tbd`
+`libicucore.tbd`
+`libz.tbd`
+`libstdc++.tbd`
+`JavaScriptCore.framework`。
 
   ![](http://o9xc0bh9t.bkt.clouddn.com/14828273371003.jpg)
 3. 配置工程。
@@ -111,7 +121,7 @@ pod update
 [AGJointOperationSDK setProductionMode:NO];
 
 //配置clentId, seceret 和 热云 appKey
-[AGJointOperationSDK setClientId:@"你的client id" clientSecret:@"你的client secret" reYunAppKey:@"热云appKey"];
+[AGJointOperationSDK setClientId:@"你的client id" clientSecret:@"你的client secret"];
 
 //配置shareSDK，不集成第三方登陆和分享可不配置。
 [AGVendorShare registerAppWithShareAppId:@"shareAppId" WiboAppId:@"weiboAppId" andWeiboSecret:@"weiboSecret" weChatAppId:@"weChatId" andWeChatSecret:@"WeChatSecret" QQAppId:@"QQAppId" andQQSecret:@"QQSecret"];
@@ -268,6 +278,8 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 2.0.2
+    - 添加架构的支持
 - 2.0.1
     - 更新UI界面
     - 移除数据统计分析接口
