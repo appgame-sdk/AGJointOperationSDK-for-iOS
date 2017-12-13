@@ -31,18 +31,7 @@
                           privateInfo:(NSDictionary *)privateInfo
                               success:(void (^)(SKPaymentTransaction *transaction))successBlock
                               failure:(void (^)(NSError *error))failureBlock;
-/**
- 支持第三方支付方法。
- @param amount 价格
- */
-- (void)purchaseWithProductIdentifier:(NSString *)productIdentifier
-                          callBackUrl:(NSString *)callBackUrl
-                              tradeId:(NSString *)tradeId
-                          privateInfo:(NSDictionary *)privateInfo
-                               amount:(CGFloat)amount
-                       viewController:(UIViewController*)viewController
-                              success:(void (^)(SKPaymentTransaction *transaction))successBlock
-                              failure:(void (^)(NSError *error))failureBlock;
+
 /**
  内购恢复方法。
  @param successBlock 恢复内购成功后回调

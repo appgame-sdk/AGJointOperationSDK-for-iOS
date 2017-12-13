@@ -84,12 +84,7 @@ FOUNDATION_EXPORT const unsigned char AGJointOperationSDKVersionString[];
 + (void)setPlatformLogin:(BOOL)isPlatformLogin;
 
 + (BOOL)isPlatformLogin;
-/**
- 是否打开第三方支付
- */
-+ (void)setThirdpartyPayment:(NSString *)thirdpartyPayment;
 
-+ (NSString *)thirdpartyPayment;
 
 /**
  是否打开实名认证功能
@@ -97,6 +92,13 @@ FOUNDATION_EXPORT const unsigned char AGJointOperationSDKVersionString[];
 + (void)setOpenAuthentication:(NSString *)openAuthentication;
 
 + (NSString *)openAuthentication;
+
+/**
+ 是否显示浮窗功能
+ */
++ (void)setShowFloatWindow:(NSString *)showFloatWindow;
+
++ (NSString *)showFloatWindow;
 
 /**
  设置SDK支持的屏幕方向。例如只支横屏可以设置UIInterfaceOrientationMaskLandscape。默认设置为UIInterfaceOrientationMaskAll。
