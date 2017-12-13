@@ -120,7 +120,7 @@ pod update
 //默认为正式环境，NO为测试环境
 [AGJointOperationSDK setProductionMode:NO];
 
-//配置clentId, seceret 和 热云 appKey
+//配置clentId, seceret
 [AGJointOperationSDK setClientId:@"你的client id" clientSecret:@"你的client secret"];
 
 //配置shareSDK，不集成第三方登陆和分享可不配置。
@@ -147,7 +147,7 @@ pod update
 
 ```Objective-C
 [AGUser logOutWithCompletionBlock:^(BOOL success, NSError * _Nonnull error) {
-   
+   //同样发送通知到NSNotificationCenter，注意避免退出后重复操作。
 }];
 ```
 
@@ -159,8 +159,6 @@ pod update
                                                    callBackUrl:@"你的回调地址"
                                                        tradeId:@"你的订单号"
                                                    privateInfo:@{@"你的参数":@""}
-                                                        amount:amount
-                                                viewController:self
                                                        success:^(SKPaymentTransaction *transaction) {
                                                        NSLog(@"购买成功");
                                                        } failure:^(NSError *error) {
@@ -173,7 +171,6 @@ pod update
 分享到新浪微博，需要把链接加到分享内容里。如下所示，要分享的链接为 `http://www.baidu.com`
 
 ```Objective-C
-
 NSArray *items = @[
                        @(SSDKPlatformTypeQQ),       //包含QQ，Qzone
                        @(SSDKPlatformTypeWechat),   //包含微信好友，朋友圈
@@ -205,12 +202,29 @@ NSArray *items = @[
                        }
                    }];
 ```
-  
-###回调地址说明
+登录和登出通知回调说明
+
+```Objective-C
+[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleLoginNotification:) name:AGLoginNotification object:nil];
+[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleLoginNotification:) name:AGLogOutNotification object:nil];
+
+- (void)handleLoginNotification:(NSNotification*)notification{
+    NSDictionary *userInfo = notification.userInfo;
+    
+    if ([notification.name isEqualToString:AGLoginNotification]) {
+        AGUser *user = userInfo[@"user"];
+        //登录成功，进入游戏
+    }else{
+        //SDK内浮窗切换账号回调到这里
+        //登出成功，请同时登出游戏账号并重新登陆
+    }
+}
+```
+### 回调地址说明
 
 用户完成支付之后，SDK服务器会给开发商服务器发起POST回调，通知订单处理结果。开发商需要在内购的时候传入回调地址。
 
-####回调参数说明：
+#### 回调参数说明：
 
 名字 | 可选 | 说明
 ------- | ------- | ------
@@ -278,6 +292,8 @@ GET http://passport.test.appgame.com/resource/userinfo?access_token=aKmsEfsLLmLD
 }
 ```
 ## 版本历史
+- 2.0.3
+    - 修复输入法无法显示BUG
 - 2.0.2
     - 添加架构的支持
 - 2.0.1
